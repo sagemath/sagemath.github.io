@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://a9.com/-/spec/opensearch/1.1/">
+ <title>SageMath - Calculus Tutorial - Tangent Lines
+ </title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="search"
+       type="application/opensearchdescription+xml"
+       href="http://www.sagemath.org/res/sage-search.xml"
+       title="Search sagemath.org" />
+ <link href='../res/sage.css' type="text/css" rel="stylesheet" />
+ <link rel="shortcut icon" href="../pix/sageicon.png" type="image/x-icon" />
+ <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <script src='../res/sage.js' type="text/javascript"></script>
+ <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
+ <link href='http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
+
+ <meta property="og:title" content="SageMath Mathematical Software System - Sage"/>
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="http://www.sagemath.org/"/>
+ <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
+ <meta property="og:site_name" content="SageMath Mathematical Software System"/>
+ <meta property="og:description" content="SageMath is a free and open-source mathematical software system."/>
+<link href="./calctut-res/calctut.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+<script src="calctut-res/calctut.js" type="text/javascript"></script>
+<script src="calctut-res/zoom.js" type="text/javascript"></script>
+<script type="text/javascript">$(calctut.pageLoad);</script>
+</head>
+
+<body>
+<div id="header" class="small">
+<div id="header-logo">
+ <a href="../index.html">
+  <img width="250" height="65" alt="SageMath Logo" class="round raised"
+       src="../pix/sage_logo_new_l_hc_edgy-nq8.png" title="SageMath Mathematical Software" />
+ </a>
+<a href="./index.html">Calculus Tutorial</a>
+</div>
+
+<div id="header-text">
+<a href="../index.html">back to SageMath main page</a>
+</div>
+
+</div>
+
+<div id="sage-nav-buffer" style="display: none"></div>
+
+<ul id="sage-nav">
+<div id="header-navbar">
+<table id="controlpanel">
+<tr>
+<td class="tdzoom">
+    <a href="javascript:increaseFontSize();">A+</a>&nbsp;&nbsp;
+    <a href="javascript:decreaseFontSize();">a-</a>
+</td>
+<td>
+<ul id="navbar">
+<script type="text/javascript">
+calctut.generateNav();
+</script>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="subnav">
+<select id="tutgoto" onchange="calctut.dropdownSelect();"></select>
+</div>
+</ul>
+ <div id="calctut" class="narrow txt">
+  <h1>Tangent Lines</h1>
+  <p>
+  In your experience with mathematics thus far, you have most likely come
+  across the task of calculating the slope between two points. Whether you
+  know it as "rise over run" or "change in y over change in x", the formula
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent01.png" />
+  </div>
+  <p>
+  will give you the slope between points (x1, y1) and (x2, y2). So if, for
+  instance, we were to calculate the slope between two points on f(x) = x<sup>3</sup>/2,
+  say (0, 0) and (2, 4), we would find that by the formula, (4 - 0)/(2 - 0)
+  gives us a slope of 2, as pictured on the following graph. For a purpose
+  that will later be revealed, however, what if we were to find the slope of the
+  function at a single point -- at (1, 1/2)? Such is the nature of the tangent
+  line problem that we are about to explore, and is one of the basic questions of
+  calculus.
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent02.png" />
+  </div>
+  <p>
+  Rather than simply generating a static graph this time, we'll be doing a bit of
+  manipulation. In a new worksheet called 06-Tangent Lines, copy/paste the following
+  code and evaluate it.
+  </p>
+  <pre class="tutcode">
+x1 = 0
+x2 = 2
+
+def f(x):
+    return (x^3)/2
+
+y1 = f(x1)
+y2 = f(x2)
+
+slope = (y2-y1)/(x2-x1)
+
+p = plot(f(x), x, 0, 3)
+pt1 = point((x1, y1), rgbcolor=(1,0,0), pointsize=30)
+pt2 = point((x2, y2), rgbcolor=(1,0,0), pointsize=30)
+
+d = 3
+l = line([(x1-d, y1-d*slope), (x2+d, y2+d*slope)], rgbcolor=(1,0,0))
+
+t1 = text("(%s, %s)" % (float(x1), float(y1)), (x1+0.5, y1-0.8), rgbcolor=(1,0,0))
+t2 = text("(%s, %s)" % (float(x2), float(y2)), (x2+0.5, y2-0.8), rgbcolor=(1,0,0))
+t3 = text("slope: %s" % float(slope), ((x1+x2)/2-0.5, (y1+y2)/2), rgbcolor=(1,0,0))
+
+g = p+pt1+pt2+l+t1+t2+t3
+g.show(xmin=0, xmax=3, ymin=-1, ymax=9)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+  1-2) Set the two x-coordinates<br />
+  4-5) Create a function f(x) = x<sup>3</sup>/2<br />
+  7-8) Calculate y1 and y2 based on the function f(x)<br />
+  10) Calculate for slope<br />
+  12) Plot f(x) on the interval [0, 3]<br />
+  13-14) Draw (x1, y1) and (x2, y2) on the graph<br />
+  16-17) Draw a secant line between the two points. 'd' affects the line's length<br />
+  19-21) Display the location of the two points and the slope between them. (%s simply
+  means, 'replace me with the value inside the following variable'.)<br />
+  23-24) Combine the plot, points, line, and text and show them in a single graph.
+  </p>
+  <p>
+  In the graph, the straight line that passes through the two points is called a
+  <strong>secant</strong> line -- we can say that it is an approximation of the
+  function's slope at the point (1, 1/2), albeit not a very good one. What we want
+  is a line <strong>tangent</strong> to the function at (1, 1/2) -- one that has
+  a slope equal to that of the function at (1, 1/2).
+  </p>
+  <p>
+  To attain a better approximation of the slope at that point, let's try
+  decreasing the distance between the two points at either side of it. In the
+  first cell of your worksheet, change x1 to 0.5 and x2 to 1.5 and evaluate. Your
+  graph should now look something like the following image:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent03.png" />
+  </div>
+  <p>
+  As you can see, the secant line in this graph still does not pass through the
+  desired point of (1, 1/2), but at least we are getting closer. Now, try setting
+  x1 as 0.999 and x2 as 1.001 and again evaluate the cell. Aside from looking 
+  cramped, what else can you observe about this graph? Ah ha! you surely say,
+  it looks like the slope at (1, 1/2) is just about equal to 1.5000005. We
+  could, of course, repeat this process in perpetuum, since when only a billionth
+  of a unit separates the two points, there is little doubt that the calculated
+  slope does, in fact, approximately equal the slope of f(x) = x<sup>3</sup>/2 at
+  (1, 1/2).
+  </p>
+  <p>
+  Let us skip that theoretical headache, however, and consider a much faster
+  (and even more accurate!) method. Look again at the formula for calculating
+  slopes, this time in a slightly altered form:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent04.png" />
+  </div>
+  <p>
+  Rather than ignoring the relationship between the two points, as in the first
+  form, this formula relies upon it. The symbol y2 is now f(x + h), and y1 is f(x). The
+  major difference here, though, is that x2 has been replaced by the first x plus
+  some change "h". The slope formula's premise still stands, however, as the new
+  form does in fact calculate change in y over change in x.
+  </p>
+  <p>
+  So what can we do with this new formula, you ask? Well, what we would like to
+  do is to make the change in x (designated by h) equal to zero in order to find
+  the function's slope at a single point. Exchanging 0 for h does not work well,
+  however, since that would make the formula simply (f(x + 0) - f(x))/0, which is
+  not of much help (0/0 = ?). Let us consult SageMath, though, and see if there is a
+  way to factor out h before setting it equal to zero. In a new cell, copy or type
+  the following code.
+  </p>
+<pre class="tutcode">
+def f(x):
+    return (x^3)/2
+
+var('x, h')
+(f(x + h) - f(x))/h
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(2);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain2">
+  1-2) Set f(x) as x<sup>3</sup>/2<br />
+  4) Initialize variables x and h<br />
+  5) Evaluate (f(x + h) - f(x))/h
+  </p>
+  <p>
+  The result should look like this: ((x + h)^3/2 - x^3/2)/h. With h still in the
+  denominator, though, replacing it with zero would not be a good idea. Luckily,
+  SageMath has a way for us to pull all variables from the denominator to the numerator,
+  which is just what we need. In another cell, type and evaluate the following:
+  </p>
+<pre class="tutcode">
+((f(x + h) - f(x))/h).rational_simplify()
+</pre>
+  <p>
+  The result should be (3*x^2 + 3*h*x + h^2)/2. Now that h is in the numerator,
+  replacing it with zero will give us a formula for the function's slope <em>at
+  any value of x</em>. To realize this result, add ".subs(h=0)" without the quotes
+  to the end of rational_simplify() in the last entry and again evaluate the cell.
+  And there you have it! By describing the change in x as a number 'h', we were
+  able to simplify the formula for slope and replace h with zero in order to find
+  that the slope of the function's tangent line at any x-coordinate is equal to
+  3*x<sup>2</sup>/2. This resulting expression is known as the <strong>derivative</strong>
+  of f(x) = x<sup>3</sup>/2. You'll learn more about derivatives in the next section,
+  but for now you should know that a function's derivative measures <em>rate of
+  change at a point</em>.
+  </p>
+  <p>
+  To complete what we had originally set out to do, plug in a value of 1 for x,
+  now, and you will see that the slope of the line tangent to the point (1, 1/2)
+  on f(x) = x<sup>3</sup>/2 is 3/2. This confirms our earlier experimentation with
+  numerical analysis in addition to being an exact solution. If we were to write
+  an equation for this tangent line in slope-intercept form, it would be
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent05.png" />.
+  </div>
+  <p>
+  It's very important to remember that the equation for a tangent line can <em>
+  always</em> be written in slope-intercept or point-slope form; if you find that
+  the equation for a tangent line is y = x<sup>4*x&sup2;+e</sup> + sin(x) or some such extreme,
+  something has gone (horribly) wrong. The slope of a tangent line will always
+  be a constant.
+  </p>
+  <p>
+  You probably wouldn't be surprised to learn that this symbolic process involved
+  a limit, specifically "the limit of (f(x + h) - f(x)))/h as h approaches zero."
+  The slope that we found is also known as the <strong>derivative</strong> of f(x)
+  at x=1. Look at how the tangent line lies against the graph of f(x) = x<sup>3</sup>/2:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent15.png" />
+  </div>
+<pre class="tutcode">
+(plot(x^3/2, x, 0, 2)+plot(3*x/2-1, 0, 2, rgbcolor='red')+point((1, 1/2), \
+	rgbcolor='black', pointsize=30)).show(xmin=0, xmax=2, ymin=-1, ymax=4)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(3);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain3">
+  1-2) Plot the original function with its tangent line and a point to show
+  where they touch.
+  </p>
+  <p>
+  Now that we have an exact methodology for computing the slope of a tangent line,
+  consider the function
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent06.png" />
+  </div>
+  <p>
+  What is the equation for the line tangent to (-2, g(-2))? The slope of the
+  tangent line can be found using the function's derivative:
+  </p>
+  <div class="proof">
+  <img class="qimg" src="calctut-pix/tangent07.png" />
+  <img class="qimg" src="calctut-pix/tangent08.png" />
+  <img class="qimg" src="calctut-pix/tangent09.png" />
+  <img class="qimg" src="calctut-pix/tangent10.png" />
+  <img class="qimg" src="calctut-pix/tangent11.png" />
+  <img class="qimg" src="calctut-pix/tangent12.png" />
+  </div>
+  <p>
+  Plug in -2 for x, then write an equation for the tangent line:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent13.png" />, so <img src="calctut-pix/tangent14.png" />
+  </div>
+  <p>
+  Here is another comparison:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/tangent16.png" />
+  </div>
+<pre class="tutcode">
+(plot(3/x, x, -3, 0)+plot(-3*x/4-3, -3, 0, rgbcolor='red')+point((-2, -3/2), \
+    rgbcolor='black', pointsize=30)).show(xmin=-3, xmax=0, ymin=-10, ymax=0)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(4);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain4">
+  1-2) Plot the original function with its tangent line and a point to show
+  where they touch.
+  </p>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Use the limit process to find the equation of the line tangent to the indicated
+  point.<br />
+  1) <img class="vmiddle qimg" src="calctut-pix/tangent17.png" /> at x=2.&nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'The limit process yields a slope of 4; tangent line of y = 4*x (since 4*x was a straight line to begin with).');">Toggle answer</a>
+  <br />
+  2) <img class="vmiddle qimg" src="calctut-pix/tangent18.png" /> at x=-1.&nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'The limit process yields a slope of 6; tangent line of y = 6*x+5.');">Toggle answer</a>
+  <br />
+  3) <img class="vmiddle qimg" src="calctut-pix/tangent19.png" /> at t=5.&nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'The limit process yields a slope of -1/5; tangent line of y = -x/5+5.');">Toggle answer</a>
+  </div>
+ </div>
+
+<table id="bottomnav" class="narrow txt">
+  <tr>
+  <script type="text/javascript">
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  </script>
+  </tr>
+</table>
+<div style="height:auto;min-height:50px;"> </div>
+<div id="footer" class="center">
+<table>
+<tr id="links">
+    <td><a id="footer-webmaster" href="https://github.com/sagemath/website"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-cc" title="website content is Creative Commons 3.0 licensed"
+           href="http://creativecommons.org/licenses/by-sa/4.0/"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-donate" title="Donate to the UW SageMath Foundation Fund"
+           href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG"></a>
+    </td>
+    <td>&middot;</td>
+    <td><a id="footer-rss" title="RSS News Feed"
+           href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-contact" title="Contact SageMath Project" href="../contact.html"></a></td>
+</tr>
+
+<tr style="height: 70px;">
+<td align="right" colspan="1">
+
+<a style="background:none;" href="http://www3.clustrmaps.com/user/32111c9d8">
+    <img width="65" height="42"
+    style="border:0px;"
+    id="clustrMapsImg" 
+    src="http://www3.clustrmaps.com/stats/maps-no_clusters/sagemath.org-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+
+</td>
+<td></td>
+<td align="center" style="padding-bottom: 10px;vertical-align: center">
+<div id="histats_counter"></div>
+<noscript>
+<a href="http://www.histats.com" alt="free web stats" target="_blank" >
+<div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
+</noscript>
+</td>
+<td></td>
+<td align="left" style="padding-bottom: 0px; vertical-align: center; horizontal-align: center;">
+<g:plusone size="medium" href="http://sagemath.org"></g:plusone>
+</td>
+<td></td>
+<td>
+<div id="fb-root"></div>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</td>
+<td></td>
+<td>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+</td>
+</tr>
+</table>
+</div></body>
+</html>

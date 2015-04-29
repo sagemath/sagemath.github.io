@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://a9.com/-/spec/opensearch/1.1/">
+ <title>SageMath - Mirrors
+ </title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="search"
+       type="application/opensearchdescription+xml"
+       href="http://www.sagemath.org/res/sage-search.xml"
+       title="Search sagemath.org" />
+ <link href='res/sage.css' type="text/css" rel="stylesheet" />
+ <link rel="shortcut icon" href="pix/sageicon.png" type="image/x-icon" />
+ <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <script src='res/sage.js' type="text/javascript"></script>
+ <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
+ <link href='http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
+
+ <meta property="og:title" content="SageMath Mathematical Software System - Sage"/>
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="http://www.sagemath.org/"/>
+ <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
+ <meta property="og:site_name" content="SageMath Mathematical Software System"/>
+ <meta property="og:description" content="SageMath is a free and open-source mathematical software system."/>
+ <style type="text/css">
+iframe {
+ height: 30px;
+ width: 600px;
+ overflow: hidden;
+ border: 1px solid #7f7fff;
+}
+a.c1 {color:#0000FF;text-align:left}
+td {padding: 5px 0 5px 0; }
+</style>
+</head>
+
+<body>
+<div id="header" class="small">
+<div id="header-logo">
+ <a href="index.html">
+  <img width="250" height="65" alt="SageMath Logo" class="round raised"
+       src="pix/sage_logo_new_l_hc_edgy-nq8.png" title="SageMath Mathematical Software" />
+ </a></div>
+
+<div id="header-text"><form action="search.html" method="get">
+<a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">RSS</a>
+&middot;
+<a href="http://planet.sagemath.org/">Blog</a>
+&middot;
+<a href="http://trac.sagemath.org/sage_trac">Trac</a>
+&middot;
+<a href="http://wiki.sagemath.org/support/ReportingBugs">Report Bugs</a>
+&middot;
+<a href="http://wiki.sagemath.org/">Wiki</a>
+&middot;
+<a href="http://ask.sagemath.org/">Ask</a>
+
+
+&middot;
+
+<input onmouseover="javascript:this.focus();" class="small"
+       placeholder="Search ..." type="text" name="search" size="15" />
+</form>
+
+Online:
+<a href="https://cloud.sagemath.com/">SMC</a>,
+<a href="http://www.sagenb.org/">sagenb</a>,
+
+<a href="http://sagenb.kaist.ac.kr/">KAIST</a>
+&middot;
+<a href="https://sagecell.sagemath.org/">SageCell</a>
+or
+<a href="download.html" downloadurl>Download</a>,
+<a href="download-source.html">Source Code</a>
+<br/>
+<a href="download.html" downloadurl>v6.6 (2015-04-12)</a>
+&middot;
+
+<a href="https://plus.google.com/+sagemath/" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="G+" width="16" height="16" style="border: 0;"/></a>
+
+<a href="http://www.facebook.com/pages/Sage-Math/26593144945">
+    <img alt="F" src="pix/facebook-favicon.ico" width="16" height="16" /></a>
+
+<a href="http://twitter.com/sagemath">
+    <img alt="T" src="pix/twitter-favicon.ico" width="16" height="16"/></a>
+
+<strong>&middot;</strong>
+<form name="i18n" style="display:inline">
+<select style="" name="menu" onChange="location='http://www.sagemath.org/' + document.i18n.menu.options[document.i18n.menu.selectedIndex].value;">
+<option>Language</option>
+<option value="">English</option>
+<option value="es">Español</option>
+<option value="zh">中文</option>
+<option value="fr">Français</option>
+<option value="de">Deutsch</option>
+<option value="pt">Português</option>
+<option value="ru">русский язык</option>
+</select>
+</form></div>
+
+</div>
+
+<div id="sage-nav-buffer" style="display: none"></div>
+
+<ul id="sage-nav"><li><a href="index.html">Home</a>
+<ul>
+ <li><a href="search.html">Search</a></li>
+ <li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="development-ack.html">Acknowledgments</a></li>
+ 
+ <li><a href="http://wiki.sagemath.org/Workshops">SageMath Days</a></li>
+ <li class="section"><a href="legal.html">Legal Notice</a></li>
+</ul>
+</li>
+
+<li><a href="tour.html">Tour</a>
+<ul>
+ <li><a href="tour.html">Overview</a></li>
+ <li><a href="tour-quickstart.html">Quickstart</a></li>
+ <li><a href="tour-graphics.html">Graphics</a></li>
+ <li><a href="tour-research.html">Research</a></li>
+ <li><a href="tour-benchmarks.html">Benchmarks</a></li>
+ <li class="section"><a href="http://wiki.sagemath.org/interact/">Interactive Plots (wiki)</a></li>
+ <li><a href="http://www.sagemath.org/doc/a_tour_of_sage/">A Tour of SageMath</a></li>
+ <li class="section"><a href="http://interact.sagemath.org" class="ext">SageMath Interact Community</a></li>
+</ul>
+</li>
+
+<li><a href="help.html">Help</a>
+<ul>
+ <li><a href="doc/index.html"><b>Online Documentation</b></a></li>
+ <li class="section"><a href="help.html">Support Resources</a></li>
+ <li><a href="help-groups.html">Mailing Lists</a></li>
+ <li><a href="help-uSage.html">uSageMath User Groups</a></li>
+ <li><a href="http://ask.sagemath.org" class="ext">AskSageMath Q/A Forum</a></li>
+ <li><a href="help-irc.html">IRC Chat</a></li>
+ <li><a href="help-video.html">Videos</a></li>
+ <li class="section"><a href="http://www.sagemath.org/doc/tutorial/">Tutorial</a></li>
+ <li><a href="http://www.sagemath.org/doc/constructions/">Constructions</a></li>
+ <li><a href="http://www.sagemath.org/doc/reference/">SageMath Reference</a></li>
+</ul>
+</li>
+
+<li><a href="library.html">Library</a>
+<ul>
+ <li><a href="library.html">Overview</a></li>
+ <li><a href="library-stories.html">Testimonials</a></li>
+ <li><a href="library-publications.html">Publications SageMath</a></li>
+ <li><a href="library-publications-combinat.html">Publications Combinat</a></li>
+ <li><a href="library-publications-mupad.html">Publications Mupad</a></li>
+ <li><a href="library-publications.html#books" >Books</a></li>
+ <li><a href="library-why.html">Why?</a></li>
+ <li><a href="library-marketing.html">Marketing</a></li>
+ <li><a href="library-press.html">Press Kit</a></li>
+</ul>
+</li>
+
+<li><a href="download.html">Download</a>
+<ul>
+ <li><a href="download-windows.html">Windows</a></li>
+ <li><a href="download-mac.html">Mac OSX</a></li>
+ <li><a href="download-linux.html">Linux</a></li>
+ <li class="section"><a href="download-source.html"><b>Source</b></a></li>
+ <li><a href="src-old/">Old Source</a></li>
+ <li><a href="download-latest.html">Development Release</a></li>
+ <li class="section"><a href="download-livecd.html">Live CD</a></li>
+ <li class="section"><a href="download-packages.html">Packages (SPKG)</a></li>
+ <li><a href="http://wiki.sagemath.org/InstallingGapPackages">GAP Packages</a></li>
+ <li class="section"><a href="doc/installation">Install Guide</a></li>
+ <li><a href="mirror/src/changelogs/">Release Notes</a></li>
+ <li><a href="mirrors.html">Mirrors</a></li>
+</ul>
+</li>
+
+<li><a href="development.html">Development</a>
+<ul>
+ <li><a href="development.html">Info for Developers</a></li>
+ <li><a href="development-groups.html">Mailing Lists</a></li>
+ <li><a href="development-map.html">Developer Map</a></li>
+ <li><a href="development-status.html">Status</a></li>
+ <li><a href="development-search.html">Search</a></li>
+ <li><a href="development-prize.html">Prize</a></li>
+ <li><a href="development-ack.html">Acknowledgment</a></li>
+ <li class="section"><a href="http://git.sagemath.org/sage.git/">Source Code</a></li>
+ <li><a href="doc/developer/">Developer Guide</a></li>
+</ul>
+</li>
+
+<li><a href="links.html">Links</a>
+<ul>
+ <li><a href="links.html">Projects &amp; Software</a></li>
+ <li><a href="links-components.html">SageMath Components</a></li>
+ <li class="section"><a href="http://interact.sagemath.org">SageMath Interact Community</a></li>
+ <li><a href="http://sagecell.sagemath.org/">SageMath Cell Server</a></li>
+ <li class="section"><a href="http://planet.sagemath.org/">SageMath Blog</a></li>
+ <li><a href="http://wiki.sagemath.org/">SageMath Wiki</a></li>
+ <li><a href="http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA">Report a Problem</a></li>
+ <li><a href="http://wiki.sagemath.org/support/ReportingBugs">About Bugreporting</a></li>
+ <li><a href="http://trac.sagemath.org/">SageMath Bugtracker</a></li>
+ <li><a href="http://git.sagemath.org/sage.git/">SageMath Code Repository</a></li>
+ <li class="section"><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="contact.html">Contact</a></li>
+</ul>
+</li></ul>
+ <h1 class="narrow">SageMath Mirrors</h1>
+
+ <div class="narrow center txt">
+    <iframe style="height: 400px; width: 100%"
+            width="640"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106570724428886886399.00046d7f23e304afe9f11&amp;ll=28.304381,12.65625&amp;spn=166.337894,360&amp;z=1&amp;output=embed">
+    </iframe><br />
+    <small>View <a href=
+    "http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106570724428886886399.00046d7f23e304afe9f11&amp;ll=28.304381,12.65625&amp;spn=166.337894,360&amp;z=1&amp;source=embed"
+       class="c1">SageMath Mirrors</a> in a larger map</small>
+ </div>
+
+<div class="narrow txt center">
+SageMath Mirror size stats, (thanks to <a href="http://ftp.sh.cvut.cz/WEB/index.html">CVUT.cz</a>):<br/>
+<img src="http://ftp.sh.cvut.cz/WEB/var/sagemath.png" />
+</div>
+<h2 class="narrow">Mirror List</h2>
+ <div class="narrow txt">
+  <strong>
+  If the SageMath icon is missing, a mirror may be down. If the date is too old compared to the first
+  (master mirror), it is outdated. The current SageMath version is 6.6 released 
+  2015-04-12</strong>. 
+  If you also want to help SageMath by hosting a mirror, please <a href="./contact.html">contact us</a>.
+  Check status of <a href="./mirror_manager.txt">Mirror Management</a> script.
+
+  <table class="">
+     
+<tr>
+ <td><h2> Global</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="http://files.sagemath.org/sageicon.png" width="16" height="16" />
+     <a href="http://files.sagemath.org/index.html">Google Cloud Storage CDN</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://files.sagemath.org/zzz/timestamp.html"></iframe></td>
+</tr>
+
+<tr>
+ <td><h2>Africa</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="http://sagemath.polytechnic.edu.na/sageicon.png" width="16" height="16" />
+     <a href="http://sagemath.polytechnic.edu.na/index.html">Polytechnic of Namibia</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sagemath.polytechnic.edu.na/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="ftp://ftp.sun.ac.za/pub/mirrors/www.sagemath.org/sageicon.png" width="16" height="16" />
+     <a href="ftp://ftp.sun.ac.za/pub/mirrors/www.sagemath.org/index.html">Stellenbosch University, South Africa</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="ftp://ftp.sun.ac.za/pub/mirrors/www.sagemath.org/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sagemath.mirror.ac.za/sageicon.png" width="16" height="16" />
+     <a href="http://sagemath.mirror.ac.za/index.html">Tertiary Education Network, Johannesburg, South Africa</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sagemath.mirror.ac.za/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sagemath.mirror.tn/sageicon.png" width="16" height="16" />
+     <a href="http://sagemath.mirror.tn/index.html">Tunisia</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sagemath.mirror.tn/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.leg.uct.ac.za/pub/packages/sage/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.leg.uct.ac.za/pub/packages/sage/index.html">University of Cape Town, South Africa</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.leg.uct.ac.za/pub/packages/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+<tr>
+ <td><h2>America, North</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors-usa.go-parts.com/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors-usa.go-parts.com/sage/index.html">Go-Parts, Michigan, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors-usa.go-parts.com/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://modular.fas.harvard.edu/sage/sageicon.png" width="16" height="16" />
+     <a href="http://modular.fas.harvard.edu/sage/index.html">Harvard, Boston, MA, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://modular.fas.harvard.edu/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors.hub.co/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors.hub.co/sage/index.html">Hub.co Services Inc., NY, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors.hub.co/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://modular.math.jmu.edu/sageicon.png" width="16" height="16" />
+     <a href="http://modular.math.jmu.edu/index.html">James Madison University, VA, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://modular.math.jmu.edu/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sage.scipy.org/sage/sageicon.png" width="16" height="16" />
+     <a href="http://sage.scipy.org/sage/index.html">SciPy, TX, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sage.scipy.org/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://www.cecm.sfu.ca/sage/sageicon.png" width="16" height="16" />
+     <a href="http://www.cecm.sfu.ca/sage/index.html">Simon Fraser University, B.C., Canada</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://www.cecm.sfu.ca/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sage.technocozy.com/sageicon.png" width="16" height="16" />
+     <a href="http://sage.technocozy.com/index.html">Technocozy, MD, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sage.technocozy.com/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.clibre.uqam.ca/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.clibre.uqam.ca/sage/index.html">Université du Québec à Montréal, Québec, Canada</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.clibre.uqam.ca/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors.xmission.com/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors.xmission.com/sage/index.html">XMission, Utah, USA</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors.xmission.com/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+<tr>
+ <td><h2>America, South</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="http://sagemath.c3sl.ufpr.br/sageicon.png" width="16" height="16" />
+     <a href="http://sagemath.c3sl.ufpr.br/index.html">Universidade Federal do Paraná, Brazil</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sagemath.c3sl.ufpr.br/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://linorg.usp.br/sage/sageicon.png" width="16" height="16" />
+     <a href="http://linorg.usp.br/sage/index.html">University of São Paulo, Brazil</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://linorg.usp.br/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+<tr>
+ <td><h2>Asia</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="http://sage.asis.io/sageicon.png" width="16" height="16" />
+     <a href="http://sage.asis.io/index.html">ASIS, Tehran, Iran</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sage.asis.io/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors.hustunique.com/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors.hustunique.com/sagemath/index.html">Huazhong University of Science and Technology, China</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors.hustunique.com/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.hust.edu.cn/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.hust.edu.cn/sagemath/index.html">Huazhong University of Science and Technology, Hubei, China</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.hust.edu.cn/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.iitm.ac.in/sage/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.iitm.ac.in/sage/index.html">Indian Institute of Technology Madras, India</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.iitm.ac.in/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.unej.ac.id/mirrors/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.unej.ac.id/mirrors/sage/index.html">Jember University, Java, Indonesia</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.unej.ac.id/mirrors/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.kaist.ac.kr/sage/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.kaist.ac.kr/sage/index.html">KAIST, Republic of Korea</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.kaist.ac.kr/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://jambu.spms.ntu.edu.sg/sage/sageicon.png" width="16" height="16" />
+     <a href="http://jambu.spms.ntu.edu.sg/sage/index.html">Nanyang Technological University, Singapore</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://jambu.spms.ntu.edu.sg/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.riken.jp/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.riken.jp/sagemath/index.html">Riken, Japan</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.riken.jp/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors.tuna.tsinghua.edu.cn/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors.tuna.tsinghua.edu.cn/sagemath/index.html">Tsinghua University, Beijing, China</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors.tuna.tsinghua.edu.cn/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors.ustc.edu.cn/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors.ustc.edu.cn/sagemath/index.html">University of Science and Technology, China</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors.ustc.edu.cn/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.tsukuba.wide.ad.jp/software/sage/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.tsukuba.wide.ad.jp/software/sage/index.html">WIDE Project Tsukuba NOC, Japan</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.tsukuba.wide.ad.jp/software/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.yz.yamagata-u.ac.jp/pub/math/sage/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.yz.yamagata-u.ac.jp/pub/math/sage/index.html">Yamagata University, JP</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.yz.yamagata-u.ac.jp/pub/math/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.yandex.ru/mirrors/sage.math.washington.edu/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.yandex.ru/mirrors/sage.math.washington.edu/index.html">Yandex, Russia</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.yandex.ru/mirrors/sage.math.washington.edu/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sage.yasar.edu.tr/sageicon.png" width="16" height="16" />
+     <a href="http://sage.yasar.edu.tr/index.html">Yaşar Üniversitesi, Turkey</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sage.yasar.edu.tr/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.yongbok.net/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.yongbok.net/sage/index.html">Yongbok, Republic of Korea</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.yongbok.net/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+<tr>
+ <td><h2>Australia</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.aarnet.edu.au/pub/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.aarnet.edu.au/pub/sage/index.html">AARNet Research Network</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.aarnet.edu.au/pub/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://echidna.maths.usyd.edu.au/sage/sageicon.png" width="16" height="16" />
+     <a href="http://echidna.maths.usyd.edu.au/sage/index.html">University of Sydney</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://echidna.maths.usyd.edu.au/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+<tr>
+ <td><h2>Europe</h2></td>
+</tr>
+
+<tr>
+ <td>
+     <img alt="" src="ftp://ftp.fu-berlin.de/unix/misc/sage/sageicon.png" width="16" height="16" />
+     <a href="ftp://ftp.fu-berlin.de/unix/misc/sage/index.html">Freie Universität Berlin, Germany</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="ftp://ftp.fu-berlin.de/unix/misc/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sage.mirror.garr.it/mirrors/sage/sageicon.png" width="16" height="16" />
+     <a href="http://sage.mirror.garr.it/mirrors/sage/index.html">GARR, Italy</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sage.mirror.garr.it/mirrors/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors-uk.go-parts.com/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors-uk.go-parts.com/sage/index.html">Go-Parts, Hampshire, UK</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors-uk.go-parts.com/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors-ru.go-parts.com/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors-ru.go-parts.com/sage/index.html">Go-Parts, Moscow, RU</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors-ru.go-parts.com/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://www-eu-1.sagedev.org/mirror/sageicon.png" width="16" height="16" />
+     <a href="http://www-eu-1.sagedev.org/mirror/index.html">Google Datacenter, EU</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://www-eu-1.sagedev.org/mirror/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://www.mirrorservice.org/sites/www.sagemath.org/sageicon.png" width="16" height="16" />
+     <a href="http://www.mirrorservice.org/sites/www.sagemath.org/index.html">Mirrorservice Network, United Kingdom</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://www.mirrorservice.org/sites/www.sagemath.org/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sunsite.rediris.es/mirror/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://sunsite.rediris.es/mirror/sagemath/index.html">RedIRIS Research Network, Spain</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sunsite.rediris.es/mirror/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirror.switch.ch/mirror/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://mirror.switch.ch/mirror/sagemath/index.html">SWITCHmirror, Zurich, Switzerland</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirror.switch.ch/mirror/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://sage.Igor.onlineDirect.bg/sageicon.png" width="16" height="16" />
+     <a href="http://sage.Igor.onlineDirect.bg/index.html">Sofia, Bulgaria</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://sage.Igor.onlineDirect.bg/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://servingzone.com/mirrors/sage/sageicon.png" width="16" height="16" />
+     <a href="http://servingzone.com/mirrors/sage/index.html">Tallinn, Estonia</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://servingzone.com/mirrors/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.sh.cvut.cz/MIRRORS/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.sh.cvut.cz/MIRRORS/sagemath/index.html">Technical University, Prague, Czech</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.sh.cvut.cz/MIRRORS/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://mirrors.fe.up.pt/pub/sage/sageicon.png" width="16" height="16" />
+     <a href="http://mirrors.fe.up.pt/pub/sage/index.html">Universidade do Porto, Portugal</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://mirrors.fe.up.pt/pub/sage/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://www-ftp.lip6.fr/pub/math/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://www-ftp.lip6.fr/pub/math/sagemath/index.html">Université Pierre et Marie Curie, Paris, France</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://www-ftp.lip6.fr/pub/math/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+
+
+<tr>
+ <td>
+     <img alt="" src="http://ftp.ntua.gr/pub/sagemath/sageicon.png" width="16" height="16" />
+     <a href="http://ftp.ntua.gr/pub/sagemath/index.html">Εθνικό Μετσόβιο Πολυτεχνείο, Greece</a>
+ </td>
+</tr>
+<tr>
+ <td><iframe scrolling="no" src="http://ftp.ntua.gr/pub/sagemath/zzz/timestamp.html"></iframe></td>
+</tr>
+  </table>
+ </div>
+<div style="height:auto;min-height:50px;"> </div>
+<div id="footer" class="center">
+<table>
+<tr id="links">
+    <td><a id="footer-webmaster" href="https://github.com/sagemath/website"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-cc" title="website content is Creative Commons 3.0 licensed"
+           href="http://creativecommons.org/licenses/by-sa/4.0/"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-donate" title="Donate to the UW SageMath Foundation Fund"
+           href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG"></a>
+    </td>
+    <td>&middot;</td>
+    <td><a id="footer-rss" title="RSS News Feed"
+           href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-contact" title="Contact SageMath Project" href="contact.html"></a></td>
+</tr>
+
+<tr style="height: 70px;">
+<td align="right" colspan="1">
+
+<a style="background:none;" href="http://www3.clustrmaps.com/user/32111c9d8">
+    <img width="65" height="42"
+    style="border:0px;"
+    id="clustrMapsImg" 
+    src="http://www3.clustrmaps.com/stats/maps-no_clusters/sagemath.org-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+
+</td>
+<td></td>
+<td align="center" style="padding-bottom: 10px;vertical-align: center">
+<div id="histats_counter"></div>
+<noscript>
+<a href="http://www.histats.com" alt="free web stats" target="_blank" >
+<div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
+</noscript>
+</td>
+<td></td>
+<td align="left" style="padding-bottom: 0px; vertical-align: center; horizontal-align: center;">
+<g:plusone size="medium" href="http://sagemath.org"></g:plusone>
+</td>
+<td></td>
+<td>
+<div id="fb-root"></div>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</td>
+<td></td>
+<td>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+</td>
+</tr>
+</table>
+</div></body>
+</html>

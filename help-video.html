@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://a9.com/-/spec/opensearch/1.1/">
+ <title>SageMath - Screencasts
+ </title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="search"
+       type="application/opensearchdescription+xml"
+       href="http://www.sagemath.org/res/sage-search.xml"
+       title="Search sagemath.org" />
+ <link href='res/sage.css' type="text/css" rel="stylesheet" />
+ <link rel="shortcut icon" href="pix/sageicon.png" type="image/x-icon" />
+ <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <script src='res/sage.js' type="text/javascript"></script>
+ <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
+ <link href='http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
+
+ <meta property="og:title" content="SageMath Mathematical Software System - Sage"/>
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="http://www.sagemath.org/"/>
+ <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
+ <meta property="og:site_name" content="SageMath Mathematical Software System"/>
+ <meta property="og:description" content="SageMath is a free and open-source mathematical software system."/></head>
+
+<body>
+<div id="header" class="small">
+<div id="header-logo">
+ <a href="index.html">
+  <img width="250" height="65" alt="SageMath Logo" class="round raised"
+       src="pix/sage_logo_new_l_hc_edgy-nq8.png" title="SageMath Mathematical Software" />
+ </a></div>
+
+<div id="header-text"><form action="search.html" method="get">
+<a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">RSS</a>
+&middot;
+<a href="http://planet.sagemath.org/">Blog</a>
+&middot;
+<a href="http://trac.sagemath.org/sage_trac">Trac</a>
+&middot;
+<a href="http://wiki.sagemath.org/support/ReportingBugs">Report Bugs</a>
+&middot;
+<a href="http://wiki.sagemath.org/">Wiki</a>
+&middot;
+<a href="http://ask.sagemath.org/">Ask</a>
+
+
+&middot;
+
+<input onmouseover="javascript:this.focus();" class="small"
+       placeholder="Search ..." type="text" name="search" size="15" />
+</form>
+
+Online:
+<a href="https://cloud.sagemath.com/">SMC</a>,
+<a href="http://www.sagenb.org/">sagenb</a>,
+
+<a href="http://sagenb.kaist.ac.kr/">KAIST</a>
+&middot;
+<a href="https://sagecell.sagemath.org/">SageCell</a>
+or
+<a href="download.html" downloadurl>Download</a>,
+<a href="download-source.html">Source Code</a>
+<br/>
+<a href="download.html" downloadurl>v6.6 (2015-04-12)</a>
+&middot;
+
+<a href="https://plus.google.com/+sagemath/" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="G+" width="16" height="16" style="border: 0;"/></a>
+
+<a href="http://www.facebook.com/pages/Sage-Math/26593144945">
+    <img alt="F" src="pix/facebook-favicon.ico" width="16" height="16" /></a>
+
+<a href="http://twitter.com/sagemath">
+    <img alt="T" src="pix/twitter-favicon.ico" width="16" height="16"/></a>
+
+<strong>&middot;</strong>
+<form name="i18n" style="display:inline">
+<select style="" name="menu" onChange="location='http://www.sagemath.org/' + document.i18n.menu.options[document.i18n.menu.selectedIndex].value;">
+<option>Language</option>
+<option value="">English</option>
+<option value="es">Español</option>
+<option value="zh">中文</option>
+<option value="fr">Français</option>
+<option value="de">Deutsch</option>
+<option value="pt">Português</option>
+<option value="ru">русский язык</option>
+</select>
+</form></div>
+
+</div>
+
+<div id="sage-nav-buffer" style="display: none"></div>
+
+<ul id="sage-nav"><li><a href="index.html">Home</a>
+<ul>
+ <li><a href="search.html">Search</a></li>
+ <li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="development-ack.html">Acknowledgments</a></li>
+ 
+ <li><a href="http://wiki.sagemath.org/Workshops">SageMath Days</a></li>
+ <li class="section"><a href="legal.html">Legal Notice</a></li>
+</ul>
+</li>
+
+<li><a href="tour.html">Tour</a>
+<ul>
+ <li><a href="tour.html">Overview</a></li>
+ <li><a href="tour-quickstart.html">Quickstart</a></li>
+ <li><a href="tour-graphics.html">Graphics</a></li>
+ <li><a href="tour-research.html">Research</a></li>
+ <li><a href="tour-benchmarks.html">Benchmarks</a></li>
+ <li class="section"><a href="http://wiki.sagemath.org/interact/">Interactive Plots (wiki)</a></li>
+ <li><a href="http://www.sagemath.org/doc/a_tour_of_sage/">A Tour of SageMath</a></li>
+ <li class="section"><a href="http://interact.sagemath.org" class="ext">SageMath Interact Community</a></li>
+</ul>
+</li>
+
+<li><a href="help.html">Help</a>
+<ul>
+ <li><a href="doc/index.html"><b>Online Documentation</b></a></li>
+ <li class="section"><a href="help.html">Support Resources</a></li>
+ <li><a href="help-groups.html">Mailing Lists</a></li>
+ <li><a href="help-uSage.html">uSageMath User Groups</a></li>
+ <li><a href="http://ask.sagemath.org" class="ext">AskSageMath Q/A Forum</a></li>
+ <li><a href="help-irc.html">IRC Chat</a></li>
+ <li><a href="help-video.html">Videos</a></li>
+ <li class="section"><a href="http://www.sagemath.org/doc/tutorial/">Tutorial</a></li>
+ <li><a href="http://www.sagemath.org/doc/constructions/">Constructions</a></li>
+ <li><a href="http://www.sagemath.org/doc/reference/">SageMath Reference</a></li>
+</ul>
+</li>
+
+<li><a href="library.html">Library</a>
+<ul>
+ <li><a href="library.html">Overview</a></li>
+ <li><a href="library-stories.html">Testimonials</a></li>
+ <li><a href="library-publications.html">Publications SageMath</a></li>
+ <li><a href="library-publications-combinat.html">Publications Combinat</a></li>
+ <li><a href="library-publications-mupad.html">Publications Mupad</a></li>
+ <li><a href="library-publications.html#books" >Books</a></li>
+ <li><a href="library-why.html">Why?</a></li>
+ <li><a href="library-marketing.html">Marketing</a></li>
+ <li><a href="library-press.html">Press Kit</a></li>
+</ul>
+</li>
+
+<li><a href="download.html">Download</a>
+<ul>
+ <li><a href="download-windows.html">Windows</a></li>
+ <li><a href="download-mac.html">Mac OSX</a></li>
+ <li><a href="download-linux.html">Linux</a></li>
+ <li class="section"><a href="download-source.html"><b>Source</b></a></li>
+ <li><a href="src-old/">Old Source</a></li>
+ <li><a href="download-latest.html">Development Release</a></li>
+ <li class="section"><a href="download-livecd.html">Live CD</a></li>
+ <li class="section"><a href="download-packages.html">Packages (SPKG)</a></li>
+ <li><a href="http://wiki.sagemath.org/InstallingGapPackages">GAP Packages</a></li>
+ <li class="section"><a href="doc/installation">Install Guide</a></li>
+ <li><a href="mirror/src/changelogs/">Release Notes</a></li>
+ <li><a href="mirrors.html">Mirrors</a></li>
+</ul>
+</li>
+
+<li><a href="development.html">Development</a>
+<ul>
+ <li><a href="development.html">Info for Developers</a></li>
+ <li><a href="development-groups.html">Mailing Lists</a></li>
+ <li><a href="development-map.html">Developer Map</a></li>
+ <li><a href="development-status.html">Status</a></li>
+ <li><a href="development-search.html">Search</a></li>
+ <li><a href="development-prize.html">Prize</a></li>
+ <li><a href="development-ack.html">Acknowledgment</a></li>
+ <li class="section"><a href="http://git.sagemath.org/sage.git/">Source Code</a></li>
+ <li><a href="doc/developer/">Developer Guide</a></li>
+</ul>
+</li>
+
+<li><a href="links.html">Links</a>
+<ul>
+ <li><a href="links.html">Projects &amp; Software</a></li>
+ <li><a href="links-components.html">SageMath Components</a></li>
+ <li class="section"><a href="http://interact.sagemath.org">SageMath Interact Community</a></li>
+ <li><a href="http://sagecell.sagemath.org/">SageMath Cell Server</a></li>
+ <li class="section"><a href="http://planet.sagemath.org/">SageMath Blog</a></li>
+ <li><a href="http://wiki.sagemath.org/">SageMath Wiki</a></li>
+ <li><a href="http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA">Report a Problem</a></li>
+ <li><a href="http://wiki.sagemath.org/support/ReportingBugs">About Bugreporting</a></li>
+ <li><a href="http://trac.sagemath.org/">SageMath Bugtracker</a></li>
+ <li><a href="http://git.sagemath.org/sage.git/">SageMath Code Repository</a></li>
+ <li class="section"><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="contact.html">Contact</a></li>
+</ul>
+</li></ul>
+ <h1>Screencasts and Videos</h1>
+
+<div class="bodypadding txt">On top are introductions to SageMath, <a href="#python">below are introductions to Python</a>.</div>
+
+<!-- SageMath videos -->
+
+ <h2>William Stein introduces SageMath</h2>
+
+<div class="center">
+<object width="601" height="338"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=13986940&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=91b3e3&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=13986940&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=91b3e3&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="601" height="338"></embed></object><p><a href="http://vimeo.com/13986940">Introduction to SageMath: History, Goals, Demo</a> from <a href="http://vimeo.com/user1449175">William Stein</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+<p class="narrow center">This talk is an introduction to SageMath for people who have heard very little about SageMath.  The main goal is to talk about the history of SageMath and many of the goals that motivated the development of this project.  There is also a short demo that illustrates the use of SageMath. </p>
+<p>
+<a href="http://wiki.sagemath.org/daysindia25/schedule?action=AttachFile&do=view&target=stein-intro-worksheet.sws">download worksheet (sws)</a>,
+<a href="http://sage.math.washington.edu/home/wstein/video/sagedays25/sage_intro_stein.m4v">download video (m4v)</a>
+</p>
+</div>
+
+<h2>William Stein explains Graph Theory in SageMath</h2>
+<div class="narrow center">
+<object width="640" height="360"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=14046039&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=14046039&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="360"></embed></object><p><a href="http://vimeo.com/14046039">Graph Theory in SageMath</a> from <a href="http://vimeo.com/user1449175">William Stein</a> on <a href="http://vimeo.com">Vimeo</a>.</p> <p>This is a talk about how to create, display, and work with graphs in SageMath.</p>
+<p>
+<a href="http://sagenb.org/home/pub/2352/">sage worksheet</a>, 
+<a href="http://sage.math.washington.edu/home/wstein/video/sagedays25/Graph%20Theory%20in%20Sage.m4v">download video (m4v)</a>
+</p>
+</div>
+
+<h2>William Stein about Contributing to SageMath</h2>
+<div class="narrow center">Visit <a href="./development.html">the development website</a>.</div>
+
+ <h2>SageMath Introduction, Episode 1</h2>
+
+ <div class="center narrow">
+<object width="636" height="496" id="_672" data="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" type="application/x-shockwave-flash"><param name="movie" value="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value='config={&quot;key&quot;:&quot;#$824e5316466b69d76dc&quot;,&quot;logo&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/images/showmedo_logo_vp.png&quot;,&quot;fullscreenOnly&quot;:false,&quot;top&quot;:20,&quot;right&quot;:20,&quot;opacity&quot;:0.5,&quot;displayTime&quot;:0,&quot;linkUrl&quot;:&quot;http://showmedo.com&quot;},&quot;clip&quot;:{&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true},&quot;playlist&quot;:[{&quot;url&quot;:&quot;http://videos1.showmedo.com/ShowMeDos/2450010.flv&quot;,&quot;title&quot;:&quot;Scientific Computing Using SAGE: Introduction&quot;,&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true}],&quot;plugins&quot;:{&quot;controls&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/flowplayer/flowplayer.controls-3.1.5.swf&quot;,&quot;playlist&quot;:true}}}' /></object> 
+
+
+ </div>
+
+ <div class="narrow center txt">
+  <a href="http://showmedo.com/videos/video?name=2450010&amp;fromSeriesID=245"
+      >Video about SageMath by J. Unpingco</a> hosted at ShowMeDo from the <a href=
+       "http://showmedo.com/videos/series?name=QZ0PAxn60">Scientific Computing Using SageMath</a>
+       series.
+ </div>
+
+ <h2>SageMath Introduction, Episode 2</h2>
+
+ <div class="center narrow">
+  <object width="636" height="496" id="_711" data="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" type="application/x-shockwave-flash"><param name="movie" value="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value='config={&quot;key&quot;:&quot;#$824e5316466b69d76dc&quot;,&quot;logo&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/images/showmedo_logo_vp.png&quot;,&quot;fullscreenOnly&quot;:false,&quot;top&quot;:20,&quot;right&quot;:20,&quot;opacity&quot;:0.5,&quot;displayTime&quot;:0,&quot;linkUrl&quot;:&quot;http://showmedo.com&quot;},&quot;clip&quot;:{&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true},&quot;playlist&quot;:[{&quot;url&quot;:&quot;http://videos1.showmedo.com/ShowMeDos/2450020.flv&quot;,&quot;title&quot;:&quot;Two-Dimensional Plots in SAGE&quot;,&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true}],&quot;plugins&quot;:{&quot;controls&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/flowplayer/flowplayer.controls-3.1.5.swf&quot;,&quot;playlist&quot;:true}}}' /></object> 
+ </div>
+
+
+ <div class="narrow center txt">
+  <a href="http://showmedo.com/videos/video?name=2450020&amp;fromSeriesID=245"
+      >Video about SageMath by J. Unpingco</a> hosted at ShowMeDo from the <a href=
+       "http://showmedo.com/videos/series?name=QZ0PAxn60">Scientific Computing Using SageMath</a>
+       series.
+ </div>
+ <h2>SageMath Introduction, Episode 3</h2>
+
+ <div class="center narrow">
+<object width="636" height="496" id="_1842" data="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" type="application/x-shockwave-flash"><param name="movie" value="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value='config={&quot;key&quot;:&quot;#$824e5316466b69d76dc&quot;,&quot;logo&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/images/showmedo_logo_vp.png&quot;,&quot;fullscreenOnly&quot;:false,&quot;top&quot;:20,&quot;right&quot;:20,&quot;opacity&quot;:0.5,&quot;displayTime&quot;:0,&quot;linkUrl&quot;:&quot;http://showmedo.com&quot;},&quot;clip&quot;:{&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true},&quot;playlist&quot;:[{&quot;url&quot;:&quot;http://videos1.showmedo.com/ShowMeDos/2450030.flv&quot;,&quot;title&quot;:&quot;Three-Dimensional Plots in SAGE&quot;,&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true}],&quot;plugins&quot;:{&quot;controls&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/flowplayer/flowplayer.controls-3.1.5.swf&quot;,&quot;playlist&quot;:true}}}' /></object>  
+</div>
+
+ <div class="narrow center txt">
+  <a href="http://showmedo.com/videos/video?name=2450020&amp;fromSeriesID=245"
+      >Video about SageMath by J. Unpingco</a> hosted at ShowMeDo from the <a href=
+       "http://showmedo.com/videos/series?name=QZ0PAxn60">Scientific Computing Using SageMath</a>
+       series.
+ </div>
+ <h2>SageMath Introduction, Episode 4</h2>
+
+ <div class="center narrow">
+<object width="636" height="496" id="_1860" data="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" type="application/x-shockwave-flash"><param name="movie" value="http://showmedo.com/static/flowplayer/flowplayer-3.1.5.swf" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value='config={&quot;key&quot;:&quot;#$824e5316466b69d76dc&quot;,&quot;logo&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/images/showmedo_logo_vp.png&quot;,&quot;fullscreenOnly&quot;:false,&quot;top&quot;:20,&quot;right&quot;:20,&quot;opacity&quot;:0.5,&quot;displayTime&quot;:0,&quot;linkUrl&quot;:&quot;http://showmedo.com&quot;},&quot;clip&quot;:{&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true},&quot;playlist&quot;:[{&quot;url&quot;:&quot;http://videos1.showmedo.com/ShowMeDos/2450040.flv&quot;,&quot;title&quot;:&quot;Using @interact to Add GUI Controls to Computations&quot;,&quot;baseUrl&quot;:&quot;http://showmedo.com&quot;,&quot;autoPlay&quot;:false,&quot;autoBuffering&quot;:true}],&quot;plugins&quot;:{&quot;controls&quot;:{&quot;url&quot;:&quot;http://showmedo.com/static/flowplayer/flowplayer.controls-3.1.5.swf&quot;,&quot;playlist&quot;:true}}}' /></object> 
+ </div>
+
+ <div class="narrow center txt">
+  <a href="http://showmedo.com/videos/video?name=2450020&amp;fromSeriesID=245"
+      >Video about SageMath by J. Unpingco</a> hosted at ShowMeDo from the <a href=
+       "http://showmedo.com/videos/series?name=QZ0PAxn60">@interact to add GUI controls to computations</a>
+       series.
+ </div>
+
+<h2>The Notebook Interface to SageMath Mathematics Software</h2>
+<div class="narrow left">
+Author: Karl-Dieter Crisman, Gordon College (MA)<br/>
+Date: March 18, 2011<p>
+This introduction to SageMath is about the big picture: the range of functionality, what the notebook can do for collaboration and students, etc. Karl-Dieter Crisman demonstrates some basic commands, show a few servers, and how SageMath has been used for teaching. You'll also learn how to use R in the notebook and how to publish worksheets.
+<p>
+<a href="http://www.mosaic-web.org/MCAST/videos/MCAST-2011-03-18/lib/playback.html">Video</a><br/>
+<a href="http://demo2.sagenb.org/home/pub/12/">SageMath worksheet</a>
+</p>
+</div>
+
+<h2>Modeling in SageMath: Love, War, and Zombies</h2>
+<div class="narrow left">
+Author: David Joyner, US Naval Academy<br/>
+Date: April 22, 2011<p>
+Systems of differential equations can be used to mathematically model the weather, electrical networks, spread of infectious diseases, conventional battles, populations of competing species, and, yes, zombie attacks. This talk looks at some of these models from the computational perspective using the mathematical software SageMath.
+<p>
+<a href="http://www.mosaic-web.org/MCAST/videos/MCAST-2011-04-22/lib/playback.html">Video</a><br/>
+<a href="files/love-war-zombies_slides.pdf">Slides</a>
+</p>
+</div>
+
+
+<!-- Python videos -->
+
+ <a name="python"></a>
+ <h1>Introduction to Python</h1>
+
+ <div class="bodypadding txt"><a href="http://code.google.com/edu/languages/google-python-class/">Google Python Class Website</a> &mdash; Materials, Code, Examples, ...</div>
+
+ <h2>Google Python Class Day 1 Part 1</h2>
+
+ <div class="bodypadding center txt">Introduction and Strings</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/tKTZoB2Vjuk&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/tKTZoB2Vjuk&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=tKTZoB2Vjuk">http://www.youtube.com/watch?v=tKTZoB2Vjuk</a>
+</div>
+
+ <h2>Google Python Class Day 1 Part 2</h2>
+
+ <div class="bodypadding center txt">Lists, Sorting and Tuples</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/EPYupizJYQI&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/EPYupizJYQI&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=EPYupizJYQI">http://www.youtube.com/watch?v=EPYupizJYQI</a>
+</div>
+
+ <h2>Google Python Class Day 1 Part 3</h2>
+
+ <div class="bodypadding center txt">Dictionaries and Files</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/haycL41dAhg&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/haycL41dAhg&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=haycL41dAhg">http://www.youtube.com/watch?v=haycL41dAhg</a>
+</div>
+
+ <h2>Google Python Class Day 2 Part 1</h2>
+
+ <div class="bodypadding center txt">Regular Expressions</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/kWyoYtvJpe4&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/kWyoYtvJpe4&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=kWyoYtvJpe4">http://www.youtube.com/watch?v=kWyoYtvJpe4</a>
+</div>
+
+ <h2>Google Python Class Day 2 Part 2</h2>
+
+ <div class="bodypadding center txt">Utilities: OS and Commands</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/uKZ8GBKmeDM&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/uKZ8GBKmeDM&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=uKZ8GBKmeDM">http://www.youtube.com/watch?v=uKZ8GBKmeDM</a>
+</div>
+
+ <h2>Google Python Class Day 2 Part 3</h2>
+
+ <div class="bodypadding center txt">URLs &amp; HTTP; Exceptions</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/Nn2KQmVF5Og&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/Nn2KQmVF5Og&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=Nn2KQmVF5Og">http://www.youtube.com/watch?v=Nn2KQmVF5Og</a>
+</div>
+
+ <h2>Google Python Class Day 2 Part 4</h2>
+
+ <div class="bodypadding center txt">Closing Thoughts</div>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/IcteAbMC1Ok&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/IcteAbMC1Ok&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+<div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=IcteAbMC1Ok">http://www.youtube.com/watch?v=IcteAbMC1Ok</a>
+</div>
+
+ <h2>Google I/O 2008: Painless Python Part 1</h2>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/bDgD9whDfEY&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/bDgD9whDfEY&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+ <div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=bDgD9whDfEY"
+      >http://www.youtube.com/watch?v=bDgD9whDfEY</a>
+ </div>
+
+ <h2>Google I/O 2008: Painless Python Part 2</h2>
+
+ <div class="center">
+  <object width="640"
+       height="505">
+   <param name="movie"
+        value=
+        "http://www.youtube.com/v/y7vwZ20SDzc&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff" />
+   <embed src=
+   "http://www.youtube.com/v/y7vwZ20SDzc&amp;hl=en&amp;color1=0x7f7fff&amp;color2=0x7f7fff"
+        type="application/x-shockwave-flash"
+        width="640"
+        height="505" />
+  </object>
+ </div>
+
+ <div class="center xsmall">
+  <a href="http://www.youtube.com/watch?v=y7vwZ20SDzc"
+      >http://www.youtube.com/watch?v=y7vwZ20SDzc</a>
+ </div>
+<div style="height:auto;min-height:50px;"> </div>
+<div id="footer" class="center">
+<table>
+<tr id="links">
+    <td><a id="footer-webmaster" href="https://github.com/sagemath/website"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-cc" title="website content is Creative Commons 3.0 licensed"
+           href="http://creativecommons.org/licenses/by-sa/4.0/"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-donate" title="Donate to the UW SageMath Foundation Fund"
+           href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG"></a>
+    </td>
+    <td>&middot;</td>
+    <td><a id="footer-rss" title="RSS News Feed"
+           href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-contact" title="Contact SageMath Project" href="contact.html"></a></td>
+</tr>
+
+<tr style="height: 70px;">
+<td align="right" colspan="1">
+
+<a style="background:none;" href="http://www3.clustrmaps.com/user/32111c9d8">
+    <img width="65" height="42"
+    style="border:0px;"
+    id="clustrMapsImg" 
+    src="http://www3.clustrmaps.com/stats/maps-no_clusters/sagemath.org-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+
+</td>
+<td></td>
+<td align="center" style="padding-bottom: 10px;vertical-align: center">
+<div id="histats_counter"></div>
+<noscript>
+<a href="http://www.histats.com" alt="free web stats" target="_blank" >
+<div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
+</noscript>
+</td>
+<td></td>
+<td align="left" style="padding-bottom: 0px; vertical-align: center; horizontal-align: center;">
+<g:plusone size="medium" href="http://sagemath.org"></g:plusone>
+</td>
+<td></td>
+<td>
+<div id="fb-root"></div>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</td>
+<td></td>
+<td>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+</td>
+</tr>
+</table>
+</div></body>
+</html>

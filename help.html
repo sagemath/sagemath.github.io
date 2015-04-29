@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://a9.com/-/spec/opensearch/1.1/">
+ <title>SageMath - Help and Support
+ </title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="search"
+       type="application/opensearchdescription+xml"
+       href="http://www.sagemath.org/res/sage-search.xml"
+       title="Search sagemath.org" />
+ <link href='res/sage.css' type="text/css" rel="stylesheet" />
+ <link rel="shortcut icon" href="pix/sageicon.png" type="image/x-icon" />
+ <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <script src='res/sage.js' type="text/javascript"></script>
+ <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
+ <link href='http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
+
+ <meta property="og:title" content="SageMath Mathematical Software System - Sage"/>
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="http://www.sagemath.org/"/>
+ <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
+ <meta property="og:site_name" content="SageMath Mathematical Software System"/>
+ <meta property="og:description" content="SageMath is a free and open-source mathematical software system."/>
+<style type="text/css">
+    li.c1 {list-style: none; display: inline}
+</style>
+</head>
+
+<body>
+<div id="header" class="small">
+<div id="header-logo">
+ <a href="index.html">
+  <img width="250" height="65" alt="SageMath Logo" class="round raised"
+       src="pix/sage_logo_new_l_hc_edgy-nq8.png" title="SageMath Mathematical Software" />
+ </a></div>
+
+<div id="header-text"><form action="search.html" method="get">
+<a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">RSS</a>
+&middot;
+<a href="http://planet.sagemath.org/">Blog</a>
+&middot;
+<a href="http://trac.sagemath.org/sage_trac">Trac</a>
+&middot;
+<a href="http://wiki.sagemath.org/support/ReportingBugs">Report Bugs</a>
+&middot;
+<a href="http://wiki.sagemath.org/">Wiki</a>
+&middot;
+<a href="http://ask.sagemath.org/">Ask</a>
+
+
+&middot;
+
+<input onmouseover="javascript:this.focus();" class="small"
+       placeholder="Search ..." type="text" name="search" size="15" />
+</form>
+
+Online:
+<a href="https://cloud.sagemath.com/">SMC</a>,
+<a href="http://www.sagenb.org/">sagenb</a>,
+
+<a href="http://sagenb.kaist.ac.kr/">KAIST</a>
+&middot;
+<a href="https://sagecell.sagemath.org/">SageCell</a>
+or
+<a href="download.html" downloadurl>Download</a>,
+<a href="download-source.html">Source Code</a>
+<br/>
+<a href="download.html" downloadurl>v6.6 (2015-04-12)</a>
+&middot;
+
+<a href="https://plus.google.com/+sagemath/" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="G+" width="16" height="16" style="border: 0;"/></a>
+
+<a href="http://www.facebook.com/pages/Sage-Math/26593144945">
+    <img alt="F" src="pix/facebook-favicon.ico" width="16" height="16" /></a>
+
+<a href="http://twitter.com/sagemath">
+    <img alt="T" src="pix/twitter-favicon.ico" width="16" height="16"/></a>
+
+<strong>&middot;</strong>
+<form name="i18n" style="display:inline">
+<select style="" name="menu" onChange="location='http://www.sagemath.org/' + document.i18n.menu.options[document.i18n.menu.selectedIndex].value;">
+<option>Language</option>
+<option value="">English</option>
+<option value="es">Español</option>
+<option value="zh">中文</option>
+<option value="fr">Français</option>
+<option value="de">Deutsch</option>
+<option value="pt">Português</option>
+<option value="ru">русский язык</option>
+</select>
+</form></div>
+
+</div>
+
+<div id="sage-nav-buffer" style="display: none"></div>
+
+<ul id="sage-nav"><li><a href="index.html">Home</a>
+<ul>
+ <li><a href="search.html">Search</a></li>
+ <li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="development-ack.html">Acknowledgments</a></li>
+ 
+ <li><a href="http://wiki.sagemath.org/Workshops">SageMath Days</a></li>
+ <li class="section"><a href="legal.html">Legal Notice</a></li>
+</ul>
+</li>
+
+<li><a href="tour.html">Tour</a>
+<ul>
+ <li><a href="tour.html">Overview</a></li>
+ <li><a href="tour-quickstart.html">Quickstart</a></li>
+ <li><a href="tour-graphics.html">Graphics</a></li>
+ <li><a href="tour-research.html">Research</a></li>
+ <li><a href="tour-benchmarks.html">Benchmarks</a></li>
+ <li class="section"><a href="http://wiki.sagemath.org/interact/">Interactive Plots (wiki)</a></li>
+ <li><a href="http://www.sagemath.org/doc/a_tour_of_sage/">A Tour of SageMath</a></li>
+ <li class="section"><a href="http://interact.sagemath.org" class="ext">SageMath Interact Community</a></li>
+</ul>
+</li>
+
+<li><a href="help.html">Help</a>
+<ul>
+ <li><a href="doc/index.html"><b>Online Documentation</b></a></li>
+ <li class="section"><a href="help.html">Support Resources</a></li>
+ <li><a href="help-groups.html">Mailing Lists</a></li>
+ <li><a href="help-uSage.html">uSageMath User Groups</a></li>
+ <li><a href="http://ask.sagemath.org" class="ext">AskSageMath Q/A Forum</a></li>
+ <li><a href="help-irc.html">IRC Chat</a></li>
+ <li><a href="help-video.html">Videos</a></li>
+ <li class="section"><a href="http://www.sagemath.org/doc/tutorial/">Tutorial</a></li>
+ <li><a href="http://www.sagemath.org/doc/constructions/">Constructions</a></li>
+ <li><a href="http://www.sagemath.org/doc/reference/">SageMath Reference</a></li>
+</ul>
+</li>
+
+<li><a href="library.html">Library</a>
+<ul>
+ <li><a href="library.html">Overview</a></li>
+ <li><a href="library-stories.html">Testimonials</a></li>
+ <li><a href="library-publications.html">Publications SageMath</a></li>
+ <li><a href="library-publications-combinat.html">Publications Combinat</a></li>
+ <li><a href="library-publications-mupad.html">Publications Mupad</a></li>
+ <li><a href="library-publications.html#books" >Books</a></li>
+ <li><a href="library-why.html">Why?</a></li>
+ <li><a href="library-marketing.html">Marketing</a></li>
+ <li><a href="library-press.html">Press Kit</a></li>
+</ul>
+</li>
+
+<li><a href="download.html">Download</a>
+<ul>
+ <li><a href="download-windows.html">Windows</a></li>
+ <li><a href="download-mac.html">Mac OSX</a></li>
+ <li><a href="download-linux.html">Linux</a></li>
+ <li class="section"><a href="download-source.html"><b>Source</b></a></li>
+ <li><a href="src-old/">Old Source</a></li>
+ <li><a href="download-latest.html">Development Release</a></li>
+ <li class="section"><a href="download-livecd.html">Live CD</a></li>
+ <li class="section"><a href="download-packages.html">Packages (SPKG)</a></li>
+ <li><a href="http://wiki.sagemath.org/InstallingGapPackages">GAP Packages</a></li>
+ <li class="section"><a href="doc/installation">Install Guide</a></li>
+ <li><a href="mirror/src/changelogs/">Release Notes</a></li>
+ <li><a href="mirrors.html">Mirrors</a></li>
+</ul>
+</li>
+
+<li><a href="development.html">Development</a>
+<ul>
+ <li><a href="development.html">Info for Developers</a></li>
+ <li><a href="development-groups.html">Mailing Lists</a></li>
+ <li><a href="development-map.html">Developer Map</a></li>
+ <li><a href="development-status.html">Status</a></li>
+ <li><a href="development-search.html">Search</a></li>
+ <li><a href="development-prize.html">Prize</a></li>
+ <li><a href="development-ack.html">Acknowledgment</a></li>
+ <li class="section"><a href="http://git.sagemath.org/sage.git/">Source Code</a></li>
+ <li><a href="doc/developer/">Developer Guide</a></li>
+</ul>
+</li>
+
+<li><a href="links.html">Links</a>
+<ul>
+ <li><a href="links.html">Projects &amp; Software</a></li>
+ <li><a href="links-components.html">SageMath Components</a></li>
+ <li class="section"><a href="http://interact.sagemath.org">SageMath Interact Community</a></li>
+ <li><a href="http://sagecell.sagemath.org/">SageMath Cell Server</a></li>
+ <li class="section"><a href="http://planet.sagemath.org/">SageMath Blog</a></li>
+ <li><a href="http://wiki.sagemath.org/">SageMath Wiki</a></li>
+ <li><a href="http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA">Report a Problem</a></li>
+ <li><a href="http://wiki.sagemath.org/support/ReportingBugs">About Bugreporting</a></li>
+ <li><a href="http://trac.sagemath.org/">SageMath Bugtracker</a></li>
+ <li><a href="http://git.sagemath.org/sage.git/">SageMath Code Repository</a></li>
+ <li class="section"><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="contact.html">Contact</a></li>
+</ul>
+</li></ul>
+
+ <h1>Help and Support</h1>
+
+<ul>
+  <li><a href="#SageStandardDoc">SageMath standard documentation</a></li>
+  <ul>
+    <li><a href="./doc-html/">Some translations of the standard documentation</a>;
+      see also <a href="#moretranslations">here</a>.</li>
+  </ul>
+  <li><a href="#furtherResources">Further resources</a></li>
+  <li><a href="./development.html#mailingList">Support and discussion groups</a></li>
+  <li><a href="./help-uSage.html">uSageMath User Groups</a></li>
+</ul>
+
+   <!-- SageMath standard documentation -->
+<h2><a name="SageStandardDoc">SageMath standard documentation</a></h2>
+
+<div class="normal justify bodypadding">
+The 
+<a href="./doc/index.html">SageMath standard documentation</a> consists of the following documents, in both
+  HTML and PDF versions. 
+  <br />(<a href="./doc-html/">Some translations of the standard documentation</a>)
+<br>
+
+
+
+<ul>
+  <li><a href="./doc/a_tour_of_sage/">A Tour of SageMath</a>,
+    <a href="./pdf/en/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a> &mdash;
+    a brief tour of some of SageMath's features</li>
+  <ul>
+    <li><a href="./doc-html/fr/a_tour_of_sage/">SageMath en quelques mots (Français)</a>,
+      <a href="./pdf/fr/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a></li>
+    <li><a href="./doc-html/de/a_tour_of_sage/">Ein Rundgang durch SageMath (Deutsch)</a>,
+      <a href="./pdf/de/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a></li>
+    <li><a href="./doc-html/it/a_tour_of_sage/">Esplora SageMath (Italiano)</a>,
+      <a href="./pdf/it/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a></li>
+    <li><a href="./doc-html/pt/a_tour_of_sage/">Uma Turnê pelo SageMath (Português)</a>,
+      <a href="./pdf/pt/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a></li>
+    <li><a href="./doc-html/tr/a_tour_of_sage/">SageMath Turu (Türk dili)</a>,
+      <a href="./pdf/tr/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a></li>
+  </ul>
+
+  <li>Official <a href="./doc/tutorial/">Tutorial</a>
+    (<a href="http://www.amazon.com/Sage-tutorial-version-3-4-Group/dp/1442141948/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1261010025&amp;sr=1-2">Printed &amp; Bound</a>),
+    <a href="./pdf/en/tutorial/SageTutorial.pdf">PDF</a>
+    &mdash; information for beginners, recommended
+    <ul>
+      <li><a href="./doc-html/de/tutorial/">SageMath Tutorial (Deutsch)</a>,
+	<a href="./pdf/de/tutorial/SageTutorial-de.pdf">PDF</a></li>
+
+      <li><a href="./doc-html/fr/tutorial/">Tutoriel SageMath (Français)</a>,
+	<a href="./pdf/fr/tutorial/tutorial-fr.pdf">PDF</a></li>
+
+      <li><a href="./doc-html/ru/tutorial/">учебное пособие SageMath (русский язык)</a>,
+	<a href="./pdf/ru/tutorial/SageTutorial_ru.pdf">PDF</a></li>
+
+    </ul>
+  </li>
+  
+  <li><a href="./doc/thematic_tutorials/">Thematic Tutorials</a>,
+    <a href="./pdf/en/thematic_tutorials/thematic_tutorials.pdf">PDF</a>
+    <ul>
+      <li>Introduction to SageMath</li>
+      <ul>
+	<li><a href="./doc/prep/Logging-On.html">Logging on to a SageMath Server and Creating a Worksheet (PREP)</a></li>
+	<li><a href="./doc/prep/Intro-Tutorial.html">Introductory SageMath Tutorial (PREP)</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-notebook-and-help-long.html">Tutorial: Using the SageMath notebook, navigating the help system, first exercises</a></li>
+	<li><a href="./doc/tutorial/">SageMath’s main tutorial</a></li>
+        <li><a href="./doc-html/de/thematische_anleitungen/sage_gymnasium.html">SageMath thematische Anleitungen (Deutsch)</a>,
+        <a href="./pdf/de/thematische_anleitungen/sage_gymnasium.pdf">PDF</a></li>
+      </ul>
+
+      <li>Calculus and plotting</li>
+      <ul>
+	<li><a href="./doc/prep/Symbolics-and-Basic-Plotting.html">Tutorial: Symbolics and Plotting (PREP)</a></li>
+	<li><a href="./doc/prep/Calculus.html">Tutorial: Calculus (PREP)</a></li>
+	<li><a href="./doc/prep/Advanced-2DPlotting.html">Tutorial: Advanced-2D Plotting (PREP)</a></li>
+      </ul>
+
+      <li>Algebra</li>
+      <ul>
+	<li><a href="./doc/thematic_tutorials/linear_programming.html">Linear Programming (Mixed Integer)</a></li>
+	<li><a href="./doc/thematic_tutorials/group_theory.html">Group Theory and SageMath</a></li>
+	<li><a href="./doc/thematic_tutorials/lie.html">Lie Methods and Related Combinatorics in SageMath</a></li>
+      </ul>
+
+      <li>Number Theory</li>
+      <ul>
+	<li><a href="./doc/thematic_tutorials/numtheory_rsa.html">Number Theory and the RSA Public Key Cryptosystem</a></li>
+	<li><a href="./doc/reference/padics/sage/rings/padics/tutorial.html">Introduction to the p-adics</a></li>
+      </ul>
+
+      <li>Combinatorics</li>
+      <ul>
+	<li><a href="./doc/reference/combinat/sage/combinat/tutorial.html">Introduction to combinatorics in SageMath</a></li>
+      </ul>
+
+      <li>Algebraic Combinatorics</li>
+      <ul>
+	<li><a href="./doc/reference/combinat/sage/combinat/sf/sf.html">Tutorial: Symmetric Functions</a></li>
+	<li><a href="./doc/thematic_tutorials/lie.html">Lie Methods and Related Combinatorics in SageMath</a></li>
+	<li><a href="./doc/thematic_tutorials/sandpile.html">Abelian Sandpile Model</a></li>
+      </ul>
+
+      <li>Programming and Design</li>
+      <ul>
+	<li><a href="./doc/prep/Programming.html">Tutorial: SageMath Introductory Programming (PREP)</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-programming-python.html">Tutorial: Programming in Python and SageMath</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-comprehensions.html">Tutorial: Comprehensions, Iterators, and Iterables</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-objects-and-classes.html">Tutorial: Objects and Classes in Python and SageMath</a></li>
+	<li><a href="./doc/thematic_tutorials/functional_programming.html">Functional Programming for Mathematicians</a></li>
+      </ul>
+
+      <li>Modeling Mathematics on a computer</li>
+      <ul>
+	<li><a href="./doc/thematic_tutorials/coercion_and_categories.html">How to implement new algebraic structures in SageMath</a></li>
+	<li><a href="./doc/reference/categories/sage/categories/primer.html">Elements, parents, and categories in SageMath: a (draft of) primer</a></li>
+	<li><a href="http://www.sagemath.org/doc/reference/categories/sage/categories/tutorial.html">Implementing a new parent: a (draft of) tutorial</a></li>
+      </ul>
+    </ul>
+  </li>
+
+  <li><a href="./doc/faq/">FAQ</a>,
+    <a href="./pdf/en/faq/faq.pdf">PDF</a> &mdash;
+    frequently asked questions with answers</li>
+
+  <li><a href="./doc/reference/">Reference Manual</a>,
+    <a href="./pdf/en/reference">PDF</a> &mdash;
+    details about built-in functions</li>
+
+  <li><a href="./doc/installation">Installation Guide</a>,
+    <a href="./pdf/en/installation/installation.pdf">PDF</a> &mdash;
+    helps you install SageMath (<a href="./download.html">download</a>)</li>
+
+  <li><a href="./doc/developer/">Developer's Guide</a>,
+    <a href="./pdf/en/developer/developer.pdf">PDF</a> &mdash;
+    guidelines for current and prospective SageMath developers</li>
+
+  <li><a href="./doc/constructions/">Constructions</a>
+    (<a href="http://www.lulu.com/product/paperback/sage-constructions/4089083">Printed &amp; Bound</a>),
+    <a href="./pdf/en/constructions/constructions.pdf">PDF</a> &mdash;
+    describes how to explain specific mathematical objects to SageMath</li>
+
+
+</ul>
+
+<!-- Download the standard documentation in various formats -->
+<!-- You can download the standard documentation. Multiple formats are
+     available. -->
+<div class="normal justify bodypadding">
+
+<p>You can download the entire standard documentation as a compressed file.</p>
+
+<!-- This is where you begin inserting the paths to compressed doc. -->
+<!--START_TOKEN_DOC-->
+
+<table cellpadding="6">
+  <tr bgcolor="#b8b9f9">
+    <th>Format</th>
+    <th>Packed as .zip</th>
+    <th>Packed as .tar.bz2</th>
+  </tr>
+
+  <tr bgcolor="#dfdfff">
+    <td>HTML</td>
+    <td><a href="./doc-zip/sage-6.5-doc-html.zip">download</a> (337.3 MB)</td>
+    <td><a href="./doc-bz2/sage-6.5-doc-html.tar.bz2">download</a> (67.7 MB)</td>
+   </tr>
+
+  <tr bgcolor="#dfdfff">
+    <td>PDF</td>
+    <td><a href="./doc-zip/sage-6.5-doc-pdf.zip">download</a> (50.9 MB)</td>
+    <td><a href="./doc-bz2/sage-6.5-doc-pdf.tar.bz2">download</a> (50.7 MB)</td>
+  </tr>
+
+  <tr bgcolor="#dfdfff">
+    <td>HTML+PDF</td>
+    <td><a href="./doc-zip/sage-6.5-doc.zip">download</a> (390.2 MB)</td>
+    <td><a href="./doc-bz2/sage-6.5-doc.tar.bz2">download</a> (120.2 MB)</td>
+  </tr>
+</table>
+<!--END_TOKEN_DOC-->
+<!-- This is where you finish inserting paths to compressed doc. -->
+</div>
+</li>
+
+<!-- further resources -->
+<h2><a name="furtherResources">Further resources</a></h2>
+  <ul>
+     <li id="moretranslations">More Translated Resources</li>
+       <ul>
+        <li><a href="./es/Introduccion_a_SAGE.pdf">Introduccion:
+          Matemáticas Elementales con SageMath (Español)</a></li>
+        <li><a href="./es/Manual_SAGE_principiantes.pdf">Manual de SageMath
+	  para principiantes (Español)</a></li>
+        <li><a href="./files/Sage_Persian_tutorial.pdf">Persian Tutorial (Farsi): آموزش فارسی (PDF)</a> 
+          <a href="./files/Sage_Persian_tutorial.docx">DOCX</a>)</li>
+        <li><a href="./files/introduccio-al-sage_Amoros2012.pdf">Introducci&#243; al SAGE</a>
+          &mdash; mini tutorial in Catalan by Maria Bras Amor&#243;s</li>
+     </ul>
+  </ul>
+
+  <ul>
+     <li>More SageMath-hosted resources</li>
+       <ul>
+        <li><a href="http://wiki.sagemath.org/quickref">Quick Reference Cards</a> &mdash;
+          overview of  important functions</li>
+        <li><a href="./help-irc.html">IRC help channel</a> &mdash;
+            directly connects you to an online chat room</li>
+        <li><a href="./help-video.html"><strong>Screencasts</strong></a> &mdash;
+          videos explaining how SageMath works</li>
+        <li><a href="http://wiki.sagemath.org/faq"
+          >FAQ: Frequently Asked Questions</a></li>
+        <li><a href="./library-publications.html#books">Books</a> &mdash; a collection of
+          online books explaining mathematics (calculus, linear algebra,
+          number theory, etc.) using SageMath</li>
+        <li><a href="http://planet.sagemath.org/"
+          >Planet SageMath Blogs</a> &mdash; a collection of blogs by
+          SageMath users and developers</li>
+        <li><a href="./search.html"><strong>Search</strong></a> &mdash; an
+          online search interface indexing SageMath documentation, discussion
+          groups, various web resources, blogs and various other places on
+          the web</li>
+     </ul>
+  </ul>
+
+  <ul>
+     <li>Contributed Thematic Tutorials</li>
+       <ul>
+        <li><a href="http://openwetware.org/wiki/Open_writing_projects/Sage_and_cython_a_brief_introduction"
+          >SageMath and Cython: A Brief Introduction</a>
+          by Marshall Hampton &mdash; a brief introduction to SageMath focusing on
+          Cython</li>
+
+        <li><a href="http://bitbucket.org/mvngu/numtheory-crypto/downloads/numtheory-crypto.pdf"
+          >Number Theory and the RSA Public Key Cryptosystem</a>
+          by Minh Van Nguyen &mdash; using SageMath to study elementary number
+          theory and the RSA public key cryptosystem</li>
+
+        <li><a href="http://www.steinertriples.fr/ncohen/tut/LP/"
+          >Linear Programming in SageMath</a> by Nathann Cohen
+          &mdash; There are many very good solvers around and they are now
+          available in SageMath.</li>
+
+        <li><a href="http://www.steinertriples.fr/ncohen/tut/Graphs/"
+          >SageMath and Graph Theory</a> by Nathann Cohen
+          &mdash; SageMath will not solve your graph problems in polynomial time.
+          But everything that is already written, YOU do not have to write it
+          again!</li>
+
+        <li><a href="http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf"
+          >Linear Error-Correcting Codes</a> by David Joyner and
+          Robert Miller &mdash; introduces some of SageMath's functionality in the
+          theory of error-correcting codes</li>
+
+        <li><a href="http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf"
+          >Group Theory and SageMath: A Primer</a> by Rob Beezer
+          &mdash; a compilation of SageMath commands useful for a student studying
+          group theory for the first time</li>
+
+     </ul>
+  </ul>
+
+  <ul>
+     <li>General Tutorials and Books</li>
+     <ul>
+        <li><b><a href="http://www.gregorybard.com/SAGE.html">Gregory V. Bard - SageMath for Undergraduates</a> (<a href="http://www.gregorybard.com/sage_for_undergraduates_color.pdf.zip">PDF</a>)</b> &mdash;
+         detailed introduction into SageMath for undergraduates and others, who simply want to learn SageMath.
+         Published by "The American Mathematical Society", 2014.</b></li>
+
+        <li><a href="http://arachnoid.com/sage/">
+            Exploring Mathematics with SageMath</a> by Paul Lutus &mdash; overview
+          of using SageMath in various areas of applied mathematics</li>
+
+        <li><a href="http://www-rohan.sdsu.edu/~mosulliv/Teaching/sdsu-sage-tutorial/index.html">SageMath Tutorial</a> by Mike O'Sullivan, Ryan Rosenbaum, and  David Monarres</li>
+
+        <li><a href="https://www.uam.es/personal_pdi/ciencias/pangulo/laboratorio/sage_for_newbies_v1.23.pdf"
+          >SageMath for Newbies</a> &mdash; book by T. Kosan
+          <ul>
+            <li>Spanish translation: <a href="./es/Manual_SAGE_principiantes.pdf">Manual de SageMath
+	    para principiantes (Español)</a></li>
+	  </ul>
+        </li>
+        
+       </ul>
+  </ul>
+
+<div class="normal justify bodypadding">
+<!-- Python resources -->
+Understanding <a href="http://www.python.org">Python</a> is
+very important for using the full power of SageMath. Python is the interface and
+primary programming language of SageMath. Here are some external resources:
+</div>
+
+<ul>
+  <li>
+    <a href="http://en.wikibooks.org/wiki/Non-Programmer&#39;s_Tutorial_for_Python"
+      >
+      <strong>Non-Programmer's Tutorial for Python</strong></a> &mdash; 
+    from Wikibooks, the open-content
+    textbooks collection, offspring of Wikipedia and probably the
+    easiest introduction of all</li>
+
+  <li>
+    <a href="http://docs.python.org/tut/"
+      >Python Tutorial by Guido van Rossum</a> &mdash;
+    written by the father of Python</li>
+
+  <li>
+    <a
+       href="http://www.diveintopython.net/">Dive Into Python</a> &mdash; 
+    maybe not so dry as the one above and better suited for beginners</li>
+
+  <li><a href="http://greenteapress.com/thinkpython/">Python for Software Design</a>
+      &mdash; How to Think Like a Computer Scientist by Allen B. Downey
+  </li>
+
+  <li>
+    <a
+       href="http://www.youtube.com/watch?v=bDgD9whDfEY">Google I/O: Painless
+      Python Part 1</a> / 
+    <a
+       href="http://www.youtube.com/watch?v=y7vwZ20SDzc">Part 2</a> &mdash;
+    talk introducing Python</li>
+
+  <li>
+    <a
+       href="http://www.itmaybeahack.com/homepage/books/python.html">
+      Building Skills in Python</a> &mdash; 
+    suitable for people who are already comfortable with programming</li>
+</ul>
+
+
+<h2>Discussion groups</h2>
+
+<ul>
+  <li><a href="http://groups.google.com/group/sage-support">
+      <strong>sage-support</strong></a> &mdash;
+      this discussion group is for all sorts of <strong>general questions or problems</strong></li>
+
+  <li><a href="http://groups.google.com/group/sage-edu">sage-edu</a> &mdash;
+      this group discusses issues regarding SageMath in education</li>
+
+  <li><a href="./development.html#mailingList">development discussion groups</a></li>
+</ul>
+
+<div style="height:auto;min-height:50px;"> </div>
+<div id="footer" class="center">
+<table>
+<tr id="links">
+    <td><a id="footer-webmaster" href="https://github.com/sagemath/website"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-cc" title="website content is Creative Commons 3.0 licensed"
+           href="http://creativecommons.org/licenses/by-sa/4.0/"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-donate" title="Donate to the UW SageMath Foundation Fund"
+           href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG"></a>
+    </td>
+    <td>&middot;</td>
+    <td><a id="footer-rss" title="RSS News Feed"
+           href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-contact" title="Contact SageMath Project" href="contact.html"></a></td>
+</tr>
+
+<tr style="height: 70px;">
+<td align="right" colspan="1">
+
+<a style="background:none;" href="http://www3.clustrmaps.com/user/32111c9d8">
+    <img width="65" height="42"
+    style="border:0px;"
+    id="clustrMapsImg" 
+    src="http://www3.clustrmaps.com/stats/maps-no_clusters/sagemath.org-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+
+</td>
+<td></td>
+<td align="center" style="padding-bottom: 10px;vertical-align: center">
+<div id="histats_counter"></div>
+<noscript>
+<a href="http://www.histats.com" alt="free web stats" target="_blank" >
+<div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
+</noscript>
+</td>
+<td></td>
+<td align="left" style="padding-bottom: 0px; vertical-align: center; horizontal-align: center;">
+<g:plusone size="medium" href="http://sagemath.org"></g:plusone>
+</td>
+<td></td>
+<td>
+<div id="fb-root"></div>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</td>
+<td></td>
+<td>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+</td>
+</tr>
+</table>
+</div></body>
+</html>

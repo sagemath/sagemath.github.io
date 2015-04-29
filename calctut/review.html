@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://a9.com/-/spec/opensearch/1.1/">
+ <title>SageMath - Calculus Tutorial - Review
+ </title>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="search"
+       type="application/opensearchdescription+xml"
+       href="http://www.sagemath.org/res/sage-search.xml"
+       title="Search sagemath.org" />
+ <link href='../res/sage.css' type="text/css" rel="stylesheet" />
+ <link rel="shortcut icon" href="../pix/sageicon.png" type="image/x-icon" />
+ <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <script src='../res/sage.js' type="text/javascript"></script>
+ <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
+ <link href='http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
+
+ <meta property="og:title" content="SageMath Mathematical Software System - Sage"/>
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="http://www.sagemath.org/"/>
+ <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
+ <meta property="og:site_name" content="SageMath Mathematical Software System"/>
+ <meta property="og:description" content="SageMath is a free and open-source mathematical software system."/>
+<link href="./calctut-res/calctut.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+<script src="calctut-res/calctut.js" type="text/javascript"></script>
+<script src="calctut-res/zoom.js" type="text/javascript"></script>
+<script type="text/javascript">$(calctut.pageLoad);</script>
+</head>
+
+<body>
+<div id="header" class="small">
+<div id="header-logo">
+ <a href="../index.html">
+  <img width="250" height="65" alt="SageMath Logo" class="round raised"
+       src="../pix/sage_logo_new_l_hc_edgy-nq8.png" title="SageMath Mathematical Software" />
+ </a>
+<a href="./index.html">Calculus Tutorial</a>
+</div>
+
+<div id="header-text">
+<a href="../index.html">back to SageMath main page</a>
+</div>
+
+</div>
+
+<div id="sage-nav-buffer" style="display: none"></div>
+
+<ul id="sage-nav">
+<div id="header-navbar">
+<table id="controlpanel">
+<tr>
+<td class="tdzoom">
+    <a href="javascript:increaseFontSize();">A+</a>&nbsp;&nbsp;
+    <a href="javascript:decreaseFontSize();">a-</a>
+</td>
+<td>
+<ul id="navbar">
+<script type="text/javascript">
+calctut.generateNav();
+</script>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="subnav">
+<select id="tutgoto" onchange="calctut.dropdownSelect();"></select>
+</div>
+</ul>
+ <div id="calctut" class="narrow txt">
+  <h1>Pre-Calculus and Trigonometry Review</h1>
+  <p>
+  This tutorial requires a working knowledge of functions and graphs. When we refer
+  to f(x), we are referring to a function f whose values may change as x changes.
+  For example, in this function:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review01.png" />
+  </div>
+  <p>
+  f(x) is equal to 2 times x. We can evaluate the function when x is equal to ___
+  by replacing all occurrences of x with ___, then simplifying the
+  resulting expression:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review02.png" class="vmiddle" /> and <img src="calctut-pix/review03.png" class="vmiddle" />
+  </div>
+  <p>
+  To plot this function, we sketch a set of axes:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review04.png" />
+  </div>
+  <p>
+  Then we evaluate f(x) for a couple values of x (also known as a table of values)
+  and plot the results according to their x-value -- moving along the horizontal
+  x-axis -- and their y-value -- moving along the vertical y-axis -- and draw a
+  line between them, like so:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review05.png" />
+  </div>
+  <p>
+  As you can see, the graph intersects the x- and the y-axes at x=0 and y=0,
+  respectively. To find the x-intercepts (if any) of a function g(x), replace
+  g(x) with zero and solve for x. For example:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review06.png" style="margin-bottom:5px" />
+  <br />
+  <img src="calctut-pix/review07.png" style="margin-bottom:5px" />
+  <br />
+  <img src="calctut-pix/review08.png" style="margin-bottom:5px" />
+  <br />
+  <img src="calctut-pix/review09.png" />
+  </div>
+  <p>
+  Thus, g(x) has x-intercepts at x=-1 and x=4. Finding the function's y-intercept
+  is easy; simply replace x with 0:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review10.png" />
+  </div>
+  <p>
+  Since a function can have at most one output for every input, a function
+  can have at most one y-intercept. Conversely, since a function can have any
+  number of inputs for one output, a function can have any number of x-intercepts.
+  </p>
+  <h2>Transformations</h2>
+  <p>
+  Given a function f(x), if
+  </p>
+  <div class="proof">
+  <img class="vmiddle" src="calctut-pix/review29.png" />,
+  </div>
+  <p>
+  then f(x) will be:
+  </p>
+  <ul>
+  <li>stretched vertically by a factor of |<em>m</em>|</li>
+  <li>compressed horizontally by a factor of |<em>n</em>|</li>
+  <li>displaced horizontally to the right by <em>a</em> units</li>
+  <li>displaced vertically upward by <em>b</em> units</li>
+  <li>If <em>m</em> is negative, f(x) will be inverted over the y-axis</li>
+  <li>If <em>n</em> is negative, f(x) will be inverted over the x-axis</li>
+  <li>The sign of <em>a</em> and <em>b</em> affects the direction of the function's displacement.</li> 
+  </ul>
+  <p>
+  To apply this, try manipulating the function f(x) = 2*x. If you have the SageMath
+  notebook open, start a new worksheet and copy the following code into the first
+  cell. Manipulate m, n, a, and b (and/or f(x) itself), then evaluate the code
+  to see how the graph changes.
+  </p>
+<pre class="tutcode">
+m = -2
+n = 1/10
+a = 1
+b = 2
+
+def f(x):
+    return 2*x
+
+plot(m*f(n*(x-a))+b, x, -10, 10).show(ymin=-10, ymax=10)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+   1-4) Set variable m, n, a and b<br />
+   6-7) Define a function f(x) that equals 2*x<br />
+   9) Plot f(x) with various transformations
+  </p>
+  <hr />
+  <h1>Trigonometry</h1>
+  <p>
+  Trigonometry is the math of triangles -- or as you have probably experienced,
+  the math of triangles inscribed in circles. The following images from 
+  <a href="http://en.wikipedia.org/wiki/Unit_circle">Wikipedia</a> are visual
+  representations of the trigonometric functions and the unit circle, respectively.
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review11.png" />
+  </div>
+  <p>
+  This calculus tutorial requires no knowledge of versin or exsec, but you should
+  be familiar with cosine, sine, and tangent, and have passing knowledge of cosecant,
+  secant, and cotangent. Remember SOHCAHTOA (pronounced 'soak-uh-toe-uh'): Sine
+  is Opposite over Hypotenuse, Cosine is Adjacent over Hypotenuse, and Tangent is
+  Opposite over Adjacent.
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review12.png" />
+  </div>
+  <p>
+  In the pictured unit circle, the coordinate pairs describe the cosine of the angle
+  (comma) the sine of the angle. It shows that the cosine of pi over 3 is one-half,
+  while the sine of pi over three is root three over two, and so forth. The units
+  involving pi are known as radians: one would say, 'an angle of three pi over two
+  radians', which is also equivalent to two hundred seventy degrees.
+  </p>
+  <p>
+  For this or any exploration of calculus, there are some basic trigonometric
+  identities with which you should be familiar. In approximate order of importance,
+  they are:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review13.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review14.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review15.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review16.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review17.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review18.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review19.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review20.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review21.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review22.png" />
+  </div>
+  <p>
+  To refresh your memory, here are some graphs of trigonometric functions:
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/review23.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review24.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review25.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review26.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review27.png" style="margin-bottom:10px" />
+  <br />
+  <img src="calctut-pix/review28.png" />
+  </div>
+  <p>
+  The period of sine, cosine, secant, and cosecant is two pi, while the period
+  of tangent and cotangent is pi. A function's period is the horizontal width of
+  its repeating section. Since the sine function has a period of two pi, the
+  interval [0, 2&pi;] is identical to [2&pi;, 4&pi;]. Similarly, sine's interval
+  [3&pi;/8, 19&pi;/8] is identical to [35&pi;/8, 51&pi;/8].
+  </p>
+  <p>
+  Well, that's it for the review. I tried to keep it fairly straightforward, but
+  if there is something you would like added/clarified, please 
+  <a href="mailto:elliottb@u.washington.edu">let me know.</a> That aside, it's
+  time to go forth and learn some calculus!
+  </p>
+
+ </div>
+
+<table id="bottomnav" class="narrow txt">
+  <tr>
+  <script type="text/javascript">
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  </script>
+  </tr>
+</table>
+<div style="height:auto;min-height:50px;"> </div>
+<div id="footer" class="center">
+<table>
+<tr id="links">
+    <td><a id="footer-webmaster" href="https://github.com/sagemath/website"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-cc" title="website content is Creative Commons 3.0 licensed"
+           href="http://creativecommons.org/licenses/by-sa/4.0/"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-donate" title="Donate to the UW SageMath Foundation Fund"
+           href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG"></a>
+    </td>
+    <td>&middot;</td>
+    <td><a id="footer-rss" title="RSS News Feed"
+           href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+    <td>&middot;</td>
+    <td><a id="footer-contact" title="Contact SageMath Project" href="../contact.html"></a></td>
+</tr>
+
+<tr style="height: 70px;">
+<td align="right" colspan="1">
+
+<a style="background:none;" href="http://www3.clustrmaps.com/user/32111c9d8">
+    <img width="65" height="42"
+    style="border:0px;"
+    id="clustrMapsImg" 
+    src="http://www3.clustrmaps.com/stats/maps-no_clusters/sagemath.org-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+
+</td>
+<td></td>
+<td align="center" style="padding-bottom: 10px;vertical-align: center">
+<div id="histats_counter"></div>
+<noscript>
+<a href="http://www.histats.com" alt="free web stats" target="_blank" >
+<div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
+</noscript>
+</td>
+<td></td>
+<td align="left" style="padding-bottom: 0px; vertical-align: center; horizontal-align: center;">
+<g:plusone size="medium" href="http://sagemath.org"></g:plusone>
+</td>
+<td></td>
+<td>
+<div id="fb-root"></div>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+</td>
+<td></td>
+<td>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+</td>
+</tr>
+</table>
+</div></body>
+</html>
