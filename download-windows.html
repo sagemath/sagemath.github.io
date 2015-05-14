@@ -242,12 +242,17 @@ Please select a download server close to your location below.
 <a href="http://mirror.switch.ch/mirror/sagemath/win/index.html"><img src="http://www.sagemath.org/pix/flags/ch.png" width="22" height="14"></img> SWITCHmirror, Zurich, Switzerland</a>
 </td></tr>
 </table>
-<h4>Distributed and P2P</h4>
+<h4>Distributed / P2P</h4>
 <ul>
  <li style="font-size: 90%;">
-   <a href="http://mirrors.mit.edu/sage/torrents.html">BitTorrent</a> &mdash;
-    is a P2P protocol for fast and reliable downloads of huge files
-    over the Internet (<a href="http://en.wikipedia.org/wiki/BitTorrent">read more</a>).
+    Consider downloading via <a href="http://mirrors.mit.edu/sage/torrents.html">BitTorrent web-seed files</a>!
+    The download is balanced across all servers,
+    resumeable, and the checksum of the data is automatically verified.
+    This gives you good speed and protection against corrupt/malicious data.
+    Either install a libitorrent based client like <a href="http://deluge-torrent.org/">
+    or <a href="http://aria2.sourceforge.net/">Aria2</a> for the command-line
+    (e.g. <code>sudo apt-get install aria2</code> and then <code>$ aria2c http://...*.torrent</code>).
+    <a href="http://en.wikipedia.org/wiki/BitTorrent">Read more here</a>.
  </li>
 <!--
  <li style="font-size: 90%;">
