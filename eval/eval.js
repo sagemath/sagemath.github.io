@@ -29,6 +29,7 @@ function initSageCell(doClick) {
 
 /* initialize interactive code */
 $(function() {
+ navbarjs.init();  // sage website specific
 
  var c = getParameterByName("code");
  if (c) { $("#sageInput").html(unescape(c)); }
