@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head profile="http://a9.com/-/spec/opensearch/1.1/">
- <title>SageMath - Tour - Research
+ <title>SageMath - Tour - Education
  </title>
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -195,195 +195,25 @@ or
  <li><a href="contact.html">Contact</a></li>
 </ul>
 </li></ul>
- <h1>SageMath in Research</h1>
+ <h1>SageMath in Education</h1>
 
- <div class="narrow txt"></div>
+ <h3>Interact</h3>
 
- <h3>Numbers</h3>
+ <div class="txt narrow justify">
+  <em>Interact</em> provides an interactive tool to dynamically visualize the impact of parameters
+  on calculations. This is done in a very general way using the basic functionality of Python.
+  Therefore nearly every possible dependency could be shown. The following animation shows a slider
+  on top, which can be dragged in the real case - the plot is then updated accordingly. -
+     <a href="http://wiki.sagemath.org/interact">see wiki</a> or
+     the <a href="http://interact.sagemath.org">Interact Website</a> for more examples</a>.
+ </div>
 
- <table class="top">
-  <colgroup>
-   <col width="50%" />
-   <col width="50%" />
-  </colgroup>
-
-  <tbody>
-   <tr>
-    <td class="leftpadding">
-     <pre class="code">
-sage: <strong>a = RR(sqrt(2)); a</strong>
-1.41421356237310
-sage: <strong>b = sqrt(RealField(100)(2)); b</strong>     
-1.4142135623730950488016887242
-sage: <strong>(a-b).parent()</strong>
-Real Field with 53 bits of precision
-sage: <strong>b.parent()</strong>
-Real Field with 100 bits of precision
-sage: <strong>c = RealField(100)(a); c</strong>
-1.4142135623730951454746218587
-sage: <strong>b-c</strong>
--9.6672933134529652200516048587e-17
-</pre>
-    </td>
-
-    <td class="rightpadding">
-     <div class=" txt">
-      There are different types of numbers available. There are three major groups for floating
-      point arithmetic:
-
-      <ul>
-       <li>Python: float, complex, decimal</li>
-
-       <li>SageMath specific: RDF, CDF, RQDF, CC, RR, RIF, CIF</li>
-
-       <li>included Systems: pari, maxima</li>
-      </ul>
-
-      <div class=" txt">
-       Most important are the SageMath specific types. They use specific libraries and have more
-       functionality. Important are RR and CC, because their behavior is independent of the
-       underlying system and architecture using the <a href="http://www.mpfr.org/"
-           >MPFR</a> library. RDF and CDF use the GSL library and are very fast and
-            compatible with the SageMath framework.
-      </div>
-
-      <div class=" txt">
-       The example on the left shows how to construct different types of floating point numbers and
-       interactions between them.
-      </div>
-     </div>
-    </td>
-   </tr>
-
-   <tr>
-    <th colspan="2">
-     <h3>Algebra</h3>
-    </th>
-   </tr>
-
-   <tr>
-    <td class="leftpadding">
-     <pre class="code">
-sage: <strong>M = IntegerModRing(7)</strong>
-sage: M(2) + M(8)
-3
-sage: <strong>M.list()</strong>
-[0, 1, 2, 3, 4, 5, 6]
-
-sage: <strong>A.&lt;a,b,c&gt; = AbelianGroup([2,2,3]); A</strong>
-Multiplicative Abelian Group isomorphic to C2 x C2 x C3
-sage: <strong>A.order()</strong>
-12
-sage: <strong>A.list()</strong>
-[1, c, c^2, b, b*c, b*c^2, a, a*c, a*c^2,
-                        a*b, a*b*c, a*b*c^2]
-sage: <strong>c^5*b*a^4*c</strong>
-b
-
-</pre>
-    </td>
-
-    <td class="rightpadding">
-     <div class="txt">
-      SageMath is built on an object oriented programming language. It uses this feature to describe
-      categories of mathematical objects. A good example are algebraic objects like groups, rings
-      and fields.
-     </div>
-
-     <div class="txt">
-      On the left side you can see some examples on how to construct and use them. The first one picks
-      two integers out of the ring of integers modulo 7. The <span class="code">list()</span>
-      method lists all elements of that ring. Similarly, the second example constructs an abelian
-      group and assigns its generators to the letters a, b and c.
-     </div>
-    </td>
-   </tr>
-
-   <tr>
-    <th colspan="2">
-     <h3>Combinatorics</h3>
-    </th>
-   </tr>
-
-   <tr>
-    <td class="leftpadding">
-     <pre class="code">
-sage: <strong>X = species.SingletonSpecies()</strong>
-sage: <strong>Y = species.BinaryTreeSpecies()</strong>
-
-sage: <strong>L = CombinatorialSpecies()</strong>
-sage: <strong>L.define(X+X*Y*Y+Y*L)</strong>
-
-sage: <strong>L.generating_series().coefficients(10)</strong>
-
-[0, 1, 1, 3, 8, 23, 70, 222, 726, 2431]
-
-sage: <strong>L.structures([1,2,3]).count()</strong>
-18
-</pre>
-    </td>
-
-    <td class="rightpadding">
-     <div class="txt">
-      The demonstration on the left hand side shows how SageMath is able to work with combinatorial
-      objects from the theory of <a href="http://en.wikipedia.org/wiki/Combinatorial_species"
-          >Combinatorial Species</a>.
-     </div>
-    </td>
-   </tr>
-
-   <tr>
-    <th colspan="2">
-     <h3>Embedding SageMath into LaTeX</h3>
-    </th>
-   </tr>
-
-   <tr>
-    <td class="leftpadding">
-     <pre class="code">
-\section{SageTex Examples}
-
-This is a small calculation:
-The sum of $1+2+\sqrt{3} = \sage{1+2+sqrt(3)}$.
-
-Here you can see a $sin()$-Function:
-\sageplot{plot(sin(x), x, 0, 2*pi)}
-     
-</pre>
-    </td>
-
-    <td class="rightpadding">
-     <div class="txt">
-      <a name="latex"
-           id="latex"></a> It is possible to call SageMath commands from inside a LaTeX document. The
-           SageTex package provides special LaTeX commands that translate SageMath code into a Python
-           file. Then this file is evaluated by SageMath and the results of each calculation are
-           written back into the LaTeX file. This even works for graphics, source-code and saved
-           objects.
-     </div>
-
-     <div class="txt">
-      The example on the left shows how you can embed a formula like $$1+2+\sqrt{3}$$ and a plot
-      in a LaTeX document.
-     </div>
-
-     <div>
-      This package is part of the SageMath distribution in the <span class=
-      "code">/examples/latex_embed</span> sub-directory together with the documentation. You can
-      also obtain it online: <a
-           href="http://www.ctan.org/pkg/sagetex">CTAN: SageTex
-           Package</a>
-     </div>
-    </td>
-   </tr>
-  </tbody>
- </table>
-
- <div class="txt"></div>
-
- <div class="narrow center txt">
-  <a href="./tour-quickstart.html">Tour Quickstart</a>  &middot;  <a href="./tour-graphics.html">Tour
-  Graphics</a> &middot; <a href="./tour-benchmarks.html">Benchmarks</a>
+ <div class="txt center">
+  <a href="http://wiki.sagemath.org/interact#head-1f5673c4b3c918cc4e08755a4fed9a9c54ceb266"
+      ><img src="./pix/interact_ani_sage.gif"
+       alt="interact animation in SageMath"
+       height="501"
+       width="700" /></a>
  </div>
 <div style="height:auto;min-height:50px;"> </div>
 <div id="footer" class="center">
