@@ -1,5 +1,5 @@
-# Sage Mirror List - Thu Oct 15 10:55:32 2015
+# Sage Mirror List - Thu Oct 15 11:00:24 2015
 # python usage:
 # import urllib
 # eval(urllib.urlopen('http://www.sagemath.org/mirror_list').read())
-["http://files.sagemath.org/"]
+["http://files.sagemath.org/","http://ftp.ntua.gr/pub/sagemath/"]
