@@ -1,0 +1,59 @@
+"{% extends 'base.html' %}\n{% set title = \"Changelogs\" %}\n\n{% block content %}\n<h1>{{ title }}</h1>\n\n<div class=\"small justify bodypadding\">\n<ul>\n{% for name in changelogs %}\n<li>\n<a href=\"./{{ name }}\">{{ name }}</a>\n</li>\n{% endfor %}\n</ul>\n</div>\n{% endblock %}\n"
+{"patch":[[[[0," name }}"],[-1,"\""],[0,">{{ name"]],192,192,17,16]],"time":1451472128406}
+{"patch":[[[[0,"a href=\""],[1,"\""],[0,"./{{ nam"]],180,180,16,17]],"time":1451472126423}
+{"patch":[[[[0,"ref="],[-1,"\"\"./"],[0,"{{ n"]],183,183,12,8]],"time":1451472124423}
+{"patch":[[[[0,"href={{ "],[1,"./"],[0,"name }}>"]],182,182,16,18]],"time":1451472122423}
+{"patch":[[[[0,"{{ ."],[-1,"/name"],[0," }}>"]],187,187,13,8]],"time":1451472120473}
+{"patch":[[[[0,"href={{ "],[-1,"."],[1,"url"],[0," }}>{{ n"]],182,182,17,19]],"time":1451472118462}
+{"patch":[[[[0,"for name"],[1,", "],[0," in chan"]],148,148,16,18]],"time":1451472115903}
+{"patch":[[[[0,"r name, "],[1,"url"],[0," in chan"]],150,150,16,19]],"time":1451472113905}
+{"patch":[[[[0,"justify "],[1," "],[0,"bodypadd"]],118,118,16,17]],"time":1451471109994}
+{"patch":[[[[0,"justify "],[1,"twocols"],[0," bodypad"]],118,118,16,23]],"time":1451471107787}
+{"patch":[[[[0,"ify "],[-1,"twocols "],[0,"body"]],122,122,16,8]],"time":1451470976372}
+{"patch":[[[[0,"s=\"s"],[-1,"mall"],[0," jus"]],109,109,12,8]],"time":1451470974352}
+{"patch":[[[[0," class=\""],[-1,"s"],[1,"normal"],[0," justify"]],104,104,17,22]],"time":1451470972366}
+{"patch":[[[[0,"}}>{"],[-1,"{ name }}"],[0,"</a>"]],200,200,17,8]],"time":1451470316822}
+{"patch":[[[[0," url }}>"],[-1,"{"],[0,"</a>\n</l"]],195,195,17,16]],"time":1451470314811}
+{"patch":[[[[0,"l }}"],[-1,"></a>"],[0,"\n</l"]],198,198,13,8]],"time":1451470312412}
+{"patch":[[[[0,"f={{ url"],[-1," "],[0,"}}\n</li>"]],191,191,17,16]],"time":1451470310392}
+{"patch":[[[[0,"ef={"],[-1,"{ url}"],[0,"}\n</"]],190,190,14,8]],"time":1451470308228}
+{"patch":[[[[0,"ref="],[-1,"{}"],[0,"\n</l"]],189,189,10,8]],"time":1451470306214}
+{"patch":[[[[0,"li>\n"],[-1,"<a href="],[0,"\n</l"]],181,181,16,8]],"time":1451470304230}
+{"patch":[[[[0,"%}\n<li>\n"],[1,"    "],[0,"\n</li>\n{"]],177,177,16,20]],"time":1451470302238}
+{"patch":[[[[0,"<li>"],[-1,"\n    \n"],[0,"</li"]],180,180,14,8]],"time":1451470300231}
+{"patch":[[[[0,"\n<li"],[-1,"></li>"],[0,"\n{% "]],179,179,14,8]],"time":1451470298236}
+{"patch":[[[[0,"%}\n<"],[-1,"li"],[0,"\n{% "]],177,177,10,8],[[[0,"r %}\n</u"],[-1,"l"],[0,">\n</div>"]],190,190,17,16]],"time":1451470294233}
+{"patch":[[[[0,"or %}\n</"],[-1,"u"],[1,"i"],[0,">\n</div>"]],189,189,17,17]],"time":1451470292232}
+{"patch":[[[[0,"or %}\n</"],[1,"l"],[0,"i>\n</div"]],189,189,16,17]],"time":1451470290232}
+{"patch":[[[[0,"ding\">\n<"],[-1,"u"],[0,"l>\n{% fo"]],134,134,17,16]],"time":1451470288043}
+{"patch":[[[[0,"ding\">\n<"],[1,"o"],[0,"l>\n{% fo"]],134,134,16,17]],"time":1451470285834}
+{"patch":[[[[0,"\">\n<"],[-1,"ol"],[0,">\n{%"]],138,138,10,8]],"time":1451470283873}
+{"patch":[[[[0,"ding\">\n<"],[1,"li"],[0,">\n{% for"]],134,134,16,18]],"time":1451470281832}
+{"patch":[[[[0,"ogs %}\n<"],[1,"a "],[0,"\n{% endf"]],173,173,16,18]],"time":1451470279871}
+{"patch":[[[[0," %}\n"],[-1,"<a "],[0,"\n{% "]],176,176,11,8],[[[0,"dfor %}\n"],[1,"    "],[0,"</li>\n</"]],186,186,16,20]],"time":1451470277832}
+{"patch":[[[[0," %}\n"],[-1,"    </li>\n"],[0,"</di"]],190,190,18,8]],"time":1451470275832}
+{"patch":[[[[0,"g\">\n<li>"],[1,"</li>"],[0,"\n{% for "]],137,137,16,21]],"time":1451470273822}
+{"patch":[[[[0,"g\">\n"],[-1,"<li></li>"],[1,"    "],[0,"\n{% "]],137,137,17,12]],"time":1451470271822}
+{"patch":[[[[0,"g\">\n"],[-1,"    \n"],[0,"{% f"]],137,137,13,8]],"time":1451470267813}
+{"patch":[[[[0," end"],[-1,"for %"],[0,"}\n</"]],178,178,13,8]],"time":1451470265828}
+{"patch":[[[[0,"gs %}\n\n{"],[-1,"% end"],[1,"    "],[0,"}\n</div>"]],169,169,21,20]],"time":1451470263835}
+{"patch":[[[[0," %}\n"],[-1,"\n{"],[0,"    "],[-1,"}"],[0,"\n</d"]],171,171,15,12]],"time":1451470261811}
+{"patch":[[[[0,"%}\n    \n"],[-1,"<"],[0,"/div>\n{%"]],172,172,17,16]],"time":1451470259812}
+{"patch":[[[[0,"%}\n    \n"],[1,"<"],[0,"/div>\n{%"]],172,172,16,17]],"time":1451470257812}
+{"patch":[[[[0,"ogs "],[-1,"%}\n    "],[1,"&}"],[0,"\n</d"]],168,168,15,10]],"time":1451470255853}
+{"patch":[[[[0,"n ch"],[-1,"angelogs &"],[0,"}\n</"]],159,159,18,8]],"time":1451470253812}
+{"patch":[[[[0,"or n"],[-1,"ame, url in ch"],[0,"}\n</"]],145,145,22,8]],"time":1451470251829}
+{"patch":[[[[0,"\n{% for "],[-1,"n"],[0,"}\n</div>"]],140,140,17,16]],"time":1451470249851}
+{"patch":[[[[0,">\n{%"],[-1," for "],[0,"}\n</"]],139,139,13,8]],"time":1451470247111}
+{"patch":[[[[0,"ding\">\n{"],[-1,"%"],[0,"}\n</div>"]],134,134,17,16]],"time":1451470245071}
+{"patch":[[[[0,"g\">\n"],[-1,"{}"],[0,"\n</d"]],137,137,10,8]],"time":1451470240852}
+{"patch":[[[[0,"ngelogs\""],[1," + sage"],[0," %}\n\n{% "]],45,45,16,23]],"time":1451470238021}
+{"patch":[[[[0,"= \"C"],[-1,"hangelogs"],[0,"\" + "]],39,39,17,8]],"time":1451470235404}
+{"patch":[[[[0," = \""],[-1,"C"],[1,"Publications Citing "],[0,"\" + "]],38,38,9,28]],"time":1451470233387}
+{"patch":[[[[0,"tent %}\n"],[1,"  "],[0,"<h1>{{ t"]],87,87,16,18]],"time":1451470228153}
+{"patch":[[[[0,"\n\n</div>"],[1,"div>"],[0,"\n{% endb"]],159,159,16,20]],"time":1451470224153}
+{"patch":[[[[0,">\n\n<"],[-1,"/div>div>"],[1,"Ä"],[0,"\n{% "]],158,158,17,9]],"time":1451470222150}
+{"patch":[[[[0,"\">\n\n"],[1,"    "],[0,"<"],[-1,"Ä"],[0,"\n{% "]],157,157,10,13]],"time":1451470220174}
+{"patch":[[[[0,"\">\n\n"],[-1,"    <\n"],[0,"{% e"]],157,157,14,8]],"time":1451470218177}
+{"patch":[[[[0,"dding\">\n"],[1,"<p/>\nBelow is a list of publications that cite {{ sage }} and/or the {{ sage }}\ncluster. This list is also available in\n<a href=\"./files/bibliography-sage.bib\">BibTeX</a> format. The publications\nlisted in each section are sorted in chronological order. Where two or more\nitems are published in the same year, these items are sorted alphabetically\nby the authors' last names. See the section <a href=\"#CiteSage\">Citing {{ sage }}</a>\nfor information on how to cite {{ sage }} and/or the {{ sage }} cluster in your publications.\n\n<br><br>\nSee also the list of publications citing\n<a href=\"./library-publications-combinat.html\">{{ sage }}-Combinat</a>.\n</div>\n\n{% import 'publications-general.html' as pub %}\n\n<h2>Articles</h2>\n\n  <div class=\"small justify twocols bodypadding\" id=\"list1\" track=\"pub-sage\">\n  {{ pub.papers() }}\n  </div>\n\n<h2>Theses</h2>\n\n  <div id=\"list2\" class=\"small justify twocols bodypadding\" track=\"pub-sage\">\n  {{ pub.thesis() }}\n  </div>\n\n<h2><a name=\"books\"></a>Books</h2>\n\n  <div id=\"list3\" class=\"small justify twocols bodypadding\" track=\"pub-sage\">\n  {{ pub.books() }}\n  </div>\n\n<h2>Preprints</h2>\n\n  <div id=\"list4\" class=\"small justify twocols bodypadding\" track=\"pub-sage\">\n  {{ pub.preprints() }}\n  </div>\n\n<h2><a name=\"CiteSage\">Citing {{ sage }}</a></h2>\n\n  <div class=\"justify small bodypadding\">\n    <div class=\"txt\">\n      If you use {{ sage }} in a book, paper, website, etc., please\n      <a href=\"../contact.html\">contact us</a> about details of the\n      publication, e.g. where it is published, provide a link to your\n      publication. Please reference {{ sage }} as\n      <a href=\"http://wiki.sagemath.org/Publications_using_SAGE\">described\n      here</a>.\n    </div>\n\n    <div class=\"txt\">\n      Also, be sure to find out which components of {{ sage }}, e.g. NumPy,\n      PARI, GAP, Sage-Combinat, that your calculation uses and\n      properly attribute those systems. If you are unsure, ask on the\n      <a href=\n      \"http://groups.google.com/group/sage-support\">sage-support</a>\n      mailing list. Similarly, consider finding out who wrote the {{ sage }}\n      code you are using and acknowledge them explicitly as well.\n    </div>\n\n    <div class=\"txt\">\n      If your work (book, paper, website, etc.) is supported by the\n      {{ sage }} cluster, please <a href=\"../contact.html\">contact\n      us</a>. Please also acknowledge the grant that supports the\n      purchase of the {{ sage }} cluster by adding the following acknowledgment\n      to your work: National Science Foundation Grant No. DMS-0821725.\n    </div>\n  </div>"],[0,"\n{% endb"]],152,152,16,2591]],"time":1451470216170}
+{"patch":[[[[-1,"{% extends 'base.html' %}\n{% set title = \"Publications Citing \" + sage %}\n\n{% block content %}\n  <h1>{{ title }}</h1>\n\n<div class=\"normal justify bodypadding\">\n<p/>\nBelow is a list of publications that cite {{ sage }} and/or the {{ sage }}\ncluster. This list is also available in\n<a href=\"./files/bibliography-sage.bib\">BibTeX</a> format. The publications\nlisted in each section are sorted in chronological order. Where two or more\nitems are published in the same year, these items are sorted alphabetically\nby the authors' last names. See the section <a href=\"#CiteSage\">Citing {{ sage }}</a>\nfor information on how to cite {{ sage }} and/or the {{ sage }} cluster in your publications.\n\n<br><br>\nSee also the list of publications citing\n<a href=\"./library-publications-combinat.html\">{{ sage }}-Combinat</a>.\n</div>\n\n{% import 'publications-general.html' as pub %}\n\n<h2>Articles</h2>\n\n  <div class=\"small justify twocols bodypadding\" id=\"list1\" track=\"pub-sage\">\n  {{ pub.papers() }}\n  </div>\n\n<h2>Theses</h2>\n\n  <div id=\"list2\" class=\"small justify twocols bodypadding\" track=\"pub-sage\">\n  {{ pub.thesis() }}\n  </div>\n\n<h2><a name=\"books\"></a>Books</h2>\n\n  <div id=\"list3\" class=\"small justify twocols bodypadding\" track=\"pub-sage\">\n  {{ pub.books() }}\n  </div>\n\n<h2>Preprints</h2>\n\n  <div id=\"list4\" class=\"small justify twocols bodypadding\" track=\"pub-sage\">\n  {{ pub.preprints() }}\n  </div>\n\n<h2><a name=\"CiteSage\">Citing {{ sage }}</a></h2>\n\n  <div class=\"justify small bodypadding\">\n    <div class=\"txt\">\n      If you use {{ sage }} in a book, paper, website, etc., please\n      <a href=\"../contact.html\">contact us</a> about details of the\n      publication, e.g. where it is published, provide a link to your\n      publication. Please reference {{ sage }} as\n      <a href=\"http://wiki.sagemath.org/Publications_using_SAGE\">described\n      here</a>.\n    </div>\n\n    <div class=\"txt\">\n      Also, be sure to find out which components of {{ sage }}, e.g. NumPy,\n      PARI, GAP, Sage-Combinat, that your calculation uses and\n      properly attribute those systems. If you are unsure, ask on the\n      <a href=\n      \"http://groups.google.com/group/sage-support\">sage-support</a>\n      mailing list. Similarly, consider finding out who wrote the {{ sage }}\n      code you are using and acknowledge them explicitly as well.\n    </div>\n\n    <div class=\"txt\">\n      If your work (book, paper, website, etc.) is supported by the\n      {{ sage }} cluster, please <a href=\"../contact.html\">contact\n      us</a>. Please also acknowledge the grant that supports the\n      purchase of the {{ sage }} cluster by adding the following acknowledgment\n      to your work: National Science Foundation Grant No. DMS-0821725.\n    </div>\n  </div>\n{% endblock %}\n"]],0,0,2751,0]],"time":1451470206806}

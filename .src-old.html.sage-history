@@ -1,0 +1,8 @@
+"<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"canonical\" href=\"http://old.files.sagemath.org/src-old/\"/>\n<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n<meta http-equiv=\"refresh\" content=\"0;url=http://old.files.sagemath.org/src-old/\" />\n</head>\n<body>\n    <h1>Redirecting...</h1>\n      <a href=\"http://old.files.sagemath.org/src-old/\">Click here if you are not redirected.<a>\n      <script>location='http://old.files.sagemath.org/src-old/'</script>\n</body>\n</html>\n\n"
+{"patch":[[[[0,"ef=\""],[-1,"http://old.files.sagemath.org/src-old/"],[1,"{{ docroot }}"],[0,"\"/>\n"]],54,54,46,21]],"time":1441209807724}
+{"patch":[[[[0,"url="],[-1,"http://old.files.sagemath.org/src-old/"],[1,"{{ docroot }}"],[0,"\" />"]],183,183,46,21]],"time":1441209804573}
+{"patch":[[[[0,"ef=\""],[-1,"http://old.files.sagemath.org/src-old/"],[1,"{{ docroot }}"],[0,"\">Cl"]],259,259,46,21]],"time":1441209800702}
+{"patch":[[[[0,"ef=\""],[-1,"{{ docroot }}\">Click here if you are not redirected.<a>"],[1,"http://old.files.sagemath.org/src-old/"],[0,"\n   "]],259,259,63,46]],"time":1441209798530}
+{"patch":[[[[0,"ef=\""],[-1,"http://old.files.sagemath.org/src-old/"],[1,"{{ docroot }}\">Click here if you are not redirected.<a>"],[0,"\n   "]],259,259,46,63]],"time":1441209796513}
+{"patch":[[[[0,"on='"],[-1,"http://old.files.sagemath.org/src-old/"],[1,"}"],[0,"'</s"]],339,339,46,9]],"time":1441209794532}
+{"patch":[[[[0,"cation='"],[1,"{{ docroot }"],[0,"}'</scri"]],335,335,16,28]],"time":1441209792548}

@@ -1,0 +1,28 @@
+"<!DOCTYPE html>\n<html>\n<head>\n<link rel=\"canonical\" href=\"http://ask.sagemath.org\"/>\n<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />\n<meta http-equiv=\"refresh\" content=\"0;url=http://ask.sagemath.org\" />\n</head>\n<body>\n    <h1>Redirecting...</h1>\n<div>\nPlease be a good netizen search for your issue first! :-)\n</div>\n\n<div>\n      <a href=\"http://ask.sagemath.org\">Click here if you are not redirected.<a>\n      <script>location='http://ask.sagemath.org'</script>\n</div>\n</body>\n</html>\n\n"
+{"patch":[[[[0,"script>\n"],[-1,"</div>"],[1,"          "],[0,"\n</body>"]],477,477,22,26]],"time":1441209660182}
+{"patch":[[[[0,"pt>\n"],[-1,"          \n"],[0,"</bo"]],481,481,19,8]],"time":1441209658185}
+{"patch":[[[[0,"\n</div>\n"],[1,"    "],[0,"\n<div>\n"],[1,"\n"],[0,"      <a"]],331,331,23,28]],"time":1441209653968}
+{"patch":[[[[0," \n<div>\n"],[1,"    \n    </div>"],[0,"\n      <"]],342,342,16,31]],"time":1441209651982}
+{"patch":[[[[0,"  \n<"],[-1,"div>\n    \n    </div>"],[0,"\n   "]],341,341,28,8]],"time":1441209649955}
+{"patch":[[[[0,"   \n"],[-1,"<\n"],[0,"    "]],340,340,10,8]],"time":1441209647954}
+{"patch":[[[[0,"rst!"],[-1," :-)"],[0,"\n</d"]],323,323,12,8]],"time":1441209645953}
+{"patch":[[[[0,"d ne"],[-1,"tizen"],[0," sea"]],289,289,13,8]],"time":1441209643953}
+{"patch":[[[[0," good ne"],[1,"t"],[0," search "]],285,285,16,17]],"time":1441209641993}
+{"patch":[[[[0,"ood "],[-1,"net"],[0," sea"]],287,287,11,8]],"time":1441209620094}
+{"patch":[[[[0," a good "],[1,"net"],[0," search "]],283,283,16,19]],"time":1441209618132}
+{"patch":[[[[0,"e a "],[-1,"good net "],[0,"sear"]],282,282,17,8]],"time":1441209616094}
+{"patch":[[[[0,"ase "],[-1,"be a "],[0,"sear"]],277,277,13,8],[[[0,"ue first"],[-1,"!"],[0,"\n</div>\n"]],300,300,17,16]],"time":1441209614129}
+{"patch":[[[[0,"ssue"],[-1," first"],[0,"\n</d"]],298,298,14,8]],"time":1441209612092}
+{"patch":[[[[0,"iv>\n"],[-1,"Please "],[0,"sear"]],270,270,15,8]],"time":1441209610086}
+{"patch":[[[[0,"iv>\n"],[-1,"search for your issue\n"],[1,"    \n    "],[0,"</di"]],270,270,30,17]],"time":1441209608083}
+{"patch":[[[[0,"1>\n<"],[-1,"div>\n    \n    </div>"],[0,"\n   "]],265,265,28,8]],"time":1441209606098}
+{"patch":[[[[0,"h1>\n"],[-1,"<\n"],[0,"    "]],264,264,10,8]],"time":1441209604143}
+{"patch":[[[[0,"h1>\n"],[-1,"    \n"],[0,"    "]],264,264,13,8]],"time":1441209602108}
+{"patch":[[[[0,"math.org"],[1,"}"],[0,"\">Click "]],298,298,16,17]],"time":1441209472404}
+{"patch":[[[[0,"a href=\""],[-1,"http://ask.sagemath.org"],[1,"{{ docroot }"],[0,"}\">Click"]],275,275,39,28]],"time":1441209470382}
+{"patch":[[[[0,"cation='"],[-1,"http://ask.sagemath.org"],[1,"{{ docroot }}"],[0,"'</scrip"]],355,355,39,29]],"time":1441209468387}
+{"patch":[[[[0,"=\"0;url="],[-1,"http://ask.sagemath.org"],[1,"{{ docroot }}"],[0,"\" />\n</h"]],189,189,39,29]],"time":1441209465921}
+{"patch":[[[[0,"gema"],[-1,"th.org"],[0,"\"/>\n"]],71,71,14,8]],"time":1441209461919}
+{"patch":[[[[0,"http"],[-1,"://ask.sagema"],[0,"\"/>\n"]],58,58,21,8]],"time":1441209459913}
+{"patch":[[[[0,"\" href=\""],[-1,"http"],[1,"{{  }}"],[0,"\"/>\n<met"]],50,50,20,22]],"time":1441209457916}
+{"patch":[[[[0,"ref=\"{{ "],[1,"docroot"],[0," }}\"/>\n<"]],53,53,16,23]],"time":1441209455935}
