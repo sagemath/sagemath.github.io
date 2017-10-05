@@ -202,9 +202,15 @@ or
           value="Subscribe" /></span>
   </form>
  </div>
+ <div class="narrow xlarge txt bluebg round">
+   <strong>Note: </strong> For <strong>Windows</strong> installer binaries see the <a href="https://github.com/sagemath/sage-windows/releases">GitHub releases page</a>.
+</div>
 
+ <div class="narrow large txt">
+   Below are the VirtualBox images:
+ </div>
  <div class="narrow txt border bluebg round">
-  <div  class="large txt">  
+  <div  class="large txt">
     
 
 Please select a download server close to your location below.
@@ -248,7 +254,11 @@ Please select a download server close to your location below.
 <br/>
 <a href="http://ftp.kaist.ac.kr/sage/index.html"><img src="http://www.sagemath.org/pix/flags/kr.png" width="22" height="14"></img> KAIST, Republic of Korea</a>
 <br/>
+<a href="http://ftp.riken.jp/sagemath/index.html"><img src="http://www.sagemath.org/pix/flags/jp.png" width="22" height="14"></img> Riken, Japan</a>
+<br/>
 <a href="http://mirrors.tuna.tsinghua.edu.cn/sagemath/index.html"><img src="http://www.sagemath.org/pix/flags/cn.png" width="22" height="14"></img> Tsinghua University, Beijing, China</a>
+<br/>
+<a href="http://mirrors.ustc.edu.cn/sagemath/index.html"><img src="http://www.sagemath.org/pix/flags/cn.png" width="22" height="14"></img> University of Science and Technology, China</a>
 <br/>
 <a href="http://ftp.tsukuba.wide.ad.jp/software/sage/index.html"><img src="http://www.sagemath.org/pix/flags/jp.png" width="22" height="14"></img> WIDE Project Tsukuba NOC, Japan</a>
 <br/>
@@ -323,19 +333,34 @@ Please select a download server close to your location below.
 
     <td>
      <div class="txt">
-      To run SageMath on Microsoft Windows you need the following:
-      <ol>
-       <li><a href="./download-windows.html">Image of a SageMath installation for virtualization</a></li>
-       <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
-      </ol>
+      <a href="./download-windows.html">Download Windows binaries</a>
      </div>
-
-     <div class="">
-      The current VirtualBox solution provides you with an encapsulated
-      and tested system. It allows to use the SageMath notebook in your web
-      browser with no noticable speed loss compared to a native Linux
-      install.
-     </div>
+      To run SageMath on Microsoft Windows there are two options:
+      <ul>
+        <li>
+          For SageMath 8.0 and up a native binary installer is now available.
+          To use the installer you will need:
+          <ol>
+            <li>A 64-bit version of Windows 7 or up; there is not currently a 32-bit build</li>
+            <li>Roughly 5 GB of free disk space (plus 1 GB for the installer file itself)
+            <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
+          </ol>
+        </li>
+        <li>
+          If you can't use the binary installer for some reason, or simply
+          prefer the SageMath VirtualBox appliance, you can us it with the following:
+          <ol>
+           <li><a href="./download-windows.html">Image of a SageMath installation for virtualization</a></li>
+           <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
+          </ol>
+          <p>
+            The current VirtualBox solution provides you with an encapsulated
+            and tested system. It allows to use the SageMath notebook in your web
+            browser with no noticable speed loss compared to a native Linux
+            install.
+         </p>
+        </li>
+      </ul>
     </td>
    </tr>
 
