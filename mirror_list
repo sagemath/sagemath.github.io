@@ -1,5 +1,5 @@
-# Sage Mirror List - Wed May  9 23:41:46 2018
+# Sage Mirror List - Thu May 10 00:42:51 2018
 # python usage:
 # import urllib
 # eval(urllib.urlopen('http://www.sagemath.org/mirror_list').read())
-["http://files.sagemath.org/","http://mirrors-usa.go-parts.com/sage/sagemath/","http://mirrors.mit.edu/sage/","http://mirrors.tuna.tsinghua.edu.cn/sagemath/","http://mirrors.xmission.com/sage/","https://mirrors.sorengard.com/sage/"]
+["ftp://ftp.fu-berlin.de/unix/misc/sage/","http://files.sagemath.org/","http://ftp.iitm.ac.in/sage/","http://mirror.switch.ch/mirror/sagemath/","http://mirrors-usa.go-parts.com/sage/sagemath/","http://mirrors.mit.edu/sage/","http://mirrors.xmission.com/sage/","https://mirrors.sorengard.com/sage/"]
