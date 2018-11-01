@@ -27,7 +27,6 @@ jp 50  %  http://ftp.riken.jp/sagemath/
 au 50  %  http://mirror.aarnet.edu.au/pub/sage/
 de 50  %  ftp://ftp.fu-berlin.de/unix/misc/sage/
 de 50  %  https://fourdots.com/mirror/sagemath/
-ch 90  %  http://mirror.switch.ch/mirror/sagemath/
 br 50  %  http://sagemath.c3sl.ufpr.br/
 ca 50  %  http://www.cecm.sfu.ca/sage/
 us 75  %  http://mirrors.xmission.com/sage/
