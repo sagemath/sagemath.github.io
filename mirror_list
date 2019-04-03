@@ -1,4 +1,4 @@
-# Sage Mirror List - Wed Apr  3 13:53:41 2019
+# Sage Mirror List - Wed Apr  3 14:54:38 2019
 # python usage:
 # import urllib
 # eval(urllib.urlopen('http://www.sagemath.org/mirror_list').read())
