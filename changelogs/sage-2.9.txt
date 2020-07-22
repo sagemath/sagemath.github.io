@@ -45,7 +45,7 @@ changes compared to 2.8.15 are:
  * Integration of R 2.6.1 and rpy
  * Update to FLINT 1.02
  * Update to Symmetrica 2.0
- * Much faster permutation arithmatic
+ * Much faster permutation arithmetic
  * Very fast rubik's cube solvers
  * Many build fixes applied and many bugs squashed
 
@@ -199,7 +199,7 @@ Merged in alpha7:
 #1487: Michael Abshoff: ATLAS breaks with parallel make
 #1488: William Stein: fix output of symbolic vectors
 #1489: William Stein: serious bug in calculus maxima parsing
-#1490: Michael Abhsoff: fix numerical noise doctest failure in
+#1490: Michael Abshoff: fix numerical noise doctest failure in
        numerical/test.py
 #1492: Yi Qiang: update sqlite.spkg to 3.5.3.p1 [this also closes
        #1152, #1202]
@@ -213,7 +213,7 @@ Merged in alpha7:
 
 Merged in alpha6:
 
-#469: Burcin Erocal: Add BoolenPolynomialRing to global namespace. 
+#469: Burcin Erocal: Add BooleanPolynomialRing to global namespace. 
       With this patch PolyBoRi's integration should be finished
 #823: Josh Kantor, Michael Abshoff: make atlas standard in Sage
 #1430: Josh Kantor: sparse eigenvalues and splines [scipy sandbox]
@@ -230,12 +230,12 @@ Merged in alpha5:
       for now, BooleanRing is missing]
 #1189: Ondrej Certik: SymPy <-> SAGE automatic conversion
 #1235: William Stein: doctest fixes for 32 bit Linux
-#1296: Robert Bradshaw: Fast permutation arithmatic [with bugfixes 
+#1296: Robert Bradshaw: Fast permutation arithmetic [with bugfixes
        and debugging by William Stein, Michael Abshoff, Carl Witty 
        and Mike Hansen - this was a real team effort :)]
 #1394: Robert Miller: make plot documentation readable in graph.py
 #1450: William Stein: update the error message for using maple/
-       mathmatica from sage
+       mathematica from sage
 #1453: William Stein: fix cython dependency computation for new files
        [later reverted, due to issues with #1366]
 #1455: Michael Abshoff: Fix OSX doctest failures due to numerical
@@ -315,4 +315,4 @@ Reviewers: Carl Witty, William Stein, Mike Hansen, Robert Miller,
            Craig Citro, Michael Abshoff; apologies to anybody I
            forgot.
 
-Feeback: Jaap Spies, apologies to anybody I forgot.
+Feedback: Jaap Spies, apologies to anybody I forgot.

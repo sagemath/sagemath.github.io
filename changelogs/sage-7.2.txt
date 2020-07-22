@@ -164,7 +164,7 @@ Merged in sage-7.2.beta0:
 #20237: Jeroen Demeyer: Drop -std=c99 from C++ extensions [Reviewed by François Bissey]
 #20242: Thierry Monteil: $SAGE_ROOT/build/bin/sage-uncompress-spkg looks for a wrong number of arguments when dealing with zip files [Reviewed by Dima Pasechnik]
 #20245: David Roe: ZpCA addition giving too much output [Reviewed by Marc Masdeu]
-#20251: Immi Halupczok: Typos in the documenation of "symbolic expression" [Reviewed by Jori Mäntysalo]
+#20251: Immi Halupczok: Typos in the documentation of "symbolic expression" [Reviewed by Jori Mäntysalo]
 
 Merged in sage-7.2.beta1:
 
@@ -180,7 +180,7 @@ Merged in sage-7.2.beta1:
 #19884: Jori Mäntysalo: LatticePosets: Add is_relatively_complemented() [Reviewed by Travis Scrimshaw]
 #20098: Ralf Stephan: doctest fix for: Re/Im(tanh) wrong formula [Reviewed by Marc Mezzarobba]
 #20174: Travis Scrimshaw: Avoid recomputing vacancy numbers for rigged configurations [Reviewed by Anne Schilling]
-#20220: Bruno Grenet: GCD of polyomials over polynomial rings [Reviewed by Aly Deines]
+#20220: Bruno Grenet: GCD of polynomials over polynomial rings [Reviewed by Aly Deines]
 #20234: Jeroen Demeyer: Fix typos in "algorithm" [Reviewed by Frédéric Chapoton]
 #20235: Jeroen Demeyer: Enable warnings when compiling Sage library [Reviewed by André Apitzsch]
 #20236: Jeroen Demeyer: Use sagelib-VERSION.log for Sage library log [Reviewed by André Apitzsch]
@@ -215,7 +215,7 @@ Merged in sage-7.2.beta2:
 #19911: Dima Pasechnik, Volker Braun: Update to gap-4.8.3 [Reviewed by Dima Pasechnik, Volker Braun]
 #20152: Ben Hutz: add monomial functions to MPolynomialRing_polydict [Reviewed by Bruno Grenet]
 #20157: François Bissey: make numpy and scipy use pkg-config to find blas/lapack [Reviewed by Volker Braun]
-#20168: Ben Hutz: small imporvement to projective morphisms [Reviewed by Rebecca Lauren Miller]
+#20168: Ben Hutz: small improvement to projective morphisms [Reviewed by Rebecca Lauren Miller]
 #20198: Charles Prior: `LinearCode(C)` for some code `C` should construct a code [Reviewed by Johan Sebastian Rosenkilde Nielsen]
 #20219: Jeroen Demeyer: Remove redundant functions from gen.pyx [Reviewed by Vincent Delecroix]
 #20287: Jeroen Demeyer: Implement the Moore–Penrose matrix pseudoinverse [Reviewed by Frédéric Chapoton]
