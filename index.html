@@ -59,6 +59,10 @@
 <a href="https://wiki.sagemath.org/">Wiki</a>
 &middot;
 <a href="https://ask.sagemath.org/">Questions?</a>
+&middot;
+<a href="https://github.com/sponsors/sagemath" style="font-weight: bold;">
+  <span style="color:#ea4aaa">&hearts;</span> Sponsor
+</a>
 
 
 </form>
@@ -376,40 +380,16 @@ German: <a href="https://members.loria.fr/PZimmermann/sagebook/CalculDeutsch.pdf
  </div>
 
 
+<div class="narrow center txt announce" style="margin-top: 50px; font-weight:bold;">
+  Help SageMath by becoming a
+  <iframe src="https://github.com/sponsors/sagemath/button" title="Sponsor sagemath" height="35" width="116" style="border: 0; vertical-align: middle;"></iframe>
+  <br/>
+ Donations are handled via SageMath <a href="https://github.com/sagemath">GitHub Organization</a>
+ with <a href="https://opencollective.com/sage_math">Open Collective</a> as fiscal host.
+</div>
 
-<div id="random"
-     track="index-random"
-     class="narrow center txt random"
-     style="opacity: 0">&nbsp;</div>
-<script type="text/javascript">
-var rlinks = [
-    ["development-ack.html", "Richard D. Jenks Memorial Prize"],
-    ["development-ack.html", "SageMath Acknowledgements"],
-    ["tour-quickstart.html", "Quickstart into SageMath"],
-    ["development-map.html", "Map of all SageMath developers"],
-    ["tour.html", "Introduction to SageMath"],
-    ["http://planet.sagemath.org/", "SageMath Blog"],
-    ["http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html", "SageTeX - embedding SageMath code inside LaTeX documents."],
-    ["library-stories.html", "Success Stories, Testimonials, News Articles, Blogs"],
-    ["library-publications.html", "Publications citing SageMath"],
-    ["library-marketing.html", "Posters, Flyers, Spread the Word, ..."],
-    ["tour-benchmarks.html", "SageMath Benchmarks"],
-    ["http://wiki.sagemath.org/interact", "Interactive Calculations with SageMath"],
-    ["help.html", "Tutorials and Help Resources"]
-];
-var random_link = function () {
-    var idx = Math.floor(Math.random() * rlinks.length);
-    var href = rlinks[idx][0];
-    var txt = rlinks[idx][1];
-    var $a = $('<a>').attr('href', href).text(txt);
-    $("#random").animate({ opacity: 0 }, "slow", function() {
-        $(this).text("Random Link: ")
-               .append($a)
-               .animate({ opacity: 1 }, "slow");
-    });
-}
-$(function () { random_link(); setInterval(random_link, 10000); });
-</script>
+
+
 
 <div style="height:auto;min-height:50px;"> </div>
 <div id="footer" class="center">
@@ -454,6 +434,11 @@ $(function () { random_link(); setInterval(random_link, 10000); });
 <td></td>
 <td>
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+</td>
+</tr>
+<tr>
+<td colspan="7" style="text-align: center;">
+<iframe src="https://github.com/sponsors/sagemath/button" title="Sponsor sagemath" height="35" width="116" style="border: 0; vertical-align: middle;"></iframe>
 </td>
 </tr>
 </table>
