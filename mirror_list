@@ -1,5 +1,5 @@
-# Sage Mirror List - Tue May 11 10:38:48 2021
+# Sage Mirror List - Tue May 11 11:40:04 2021
 # python usage:
 # import urllib
 # eval(urllib.urlopen('http://www.sagemath.org/mirror_list').read())
-["http://files.sagemath.org/","https://mirror.lyrahosting.com/sagemath/"]
+["http://files.sagemath.org/","http://mirror.ufs.ac.za/sagemath/","http://mirrors.mit.edu/sage/","https://mirror-hk.koddos.net/sagemath/","https://mirror.dogado.de/sage/","https://mirror.koddos.net/sagemath/","https://mirror.lyrahosting.com/sagemath/"]
