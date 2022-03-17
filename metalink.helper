@@ -15,7 +15,7 @@ jp 50  %  https://ftp.yz.yamagata-u.ac.jp/pub/math/sage/
 ir 50  %  https://sage.asis.sh/
 cn 50  %  https://mirror.hust.edu.cn/sagemath/
 cn 50  %  https://mirrors.ustc.edu.cn/sagemath/
-br 50  %  https://linorg.usp.br/sage/
+br 50  %  http://linorg.usp.br/sage/
 cn 50  %  https://mirrors.tuna.tsinghua.edu.cn/sagemath/
 it 50  %  https://sage.mirror.garr.it/mirrors/sage/
 fr 50  %  https://www-ftp.lip6.fr/pub/math/sagemath/
@@ -24,7 +24,7 @@ za 50  %  https://sagemath.mirror.ac.za/
 gr 50  %  https://ftp.ntua.gr/pub/sagemath/
 pt 50  %  https://mirrors.up.pt/pub/sage/
 uk 50  %  https://www.mirrorservice.org/sites/www.sagemath.org/
-za 50  %  https://ftp.leg.uct.ac.za/pub/packages/sage/
+za 50  %  http://ftp.leg.uct.ac.za/pub/packages/sage/
 na 50  %  https://sagemath.nust.na/sage/
 es 50  %  https://ftp.rediris.es/mirror/sagemath/
 za 50  %  https://ftp.sun.ac.za/ftp/pub/mirrors/www.sagemath.org/
