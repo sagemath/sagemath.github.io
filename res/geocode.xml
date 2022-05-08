@@ -133,6 +133,7 @@
 <loc location="Singapore, SG" loclat="1.2800945" loclng="103.8509491"/>
 <loc location="Grenoble, France" loclat="45.188529" loclng="5.724524"/>
 <loc location="Auckland, New Zealand" loclat="-36.8484597" loclng="174.7633315"/>
+<loc location="Rajasthan, India" loclat="27.0238036" loclng="74.2179326"/>
 <loc location="Zurich, Switzerland" loclat="47.3686498" loclng="8.5391825"/>
 <loc location="San Diego, CA 92093, USA" loclat="32.8843552" loclng="-117.2338066"/>
 <loc location="Graz, Austria" loclat="47.070714" loclng="15.439504"/>
@@ -189,5 +190,4 @@
 <loc location="France" loclat="46.227638" loclng="2.213749"/>
 <loc location="Villers les Nancy, France" loclat="48.673218" loclng="6.153496"/>
 <loc location="Changsha, Hunan, China" loclat="28.228209" loclng="112.938814"/>
-<loc location="Rajasthan, India" loclat="27.0238036" loclng="74.2179326"/>
 </locations>
