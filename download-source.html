@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
- <title>SageMath - Source Code Distribution
+ <title>SageMath - Source Code Distribution (stable)
  </title>
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -177,12 +177,21 @@ or
  <li><a href="contact.html">Contact</a></li>
 </ul>
 </li></ul>
- <h1 class="narrow">Source Code Distribution</h1>
+ <h1 class="narrow">Download source code distribution (stable)</h1>
+
+ <div class="narrow txt">
+  Thank you for your interest in SageMath! You can get the complete source for SageMath to compile it on
+  your own Linux, macOS, or Cygwin system. SageMath lives in an isolated directory and does not interfere with
+  your surrounding system. It ships together with everything necessary to develop SageMath, the source
+  code and all its standard dependencies.
+ </div>
+
+
 
  <div class="txt large narrow bluebg round">
  <!--<a href="./src/">Download Source Code</a>-->
  <div class="txt border">
-  <strong>The newest source code release is 9.5. 
+  <strong>The newest stable release is 9.5. 
   </strong>   
   <br/>
    
@@ -292,23 +301,6 @@ Please select a download server close to your location below.
 
 <div>&nbsp;</div>
 
- <div class="txt narrow bluebg round">
- <div class="center border">
-  You can also download <a href="http://old.files.sagemath.org/src-old/">
-	<strong>Older Versions</strong> of SageMath
-  </a>.
- </div>
- </div>
-
- <h2 class="narrow">Information</h2>
-
- <div class="narrow txt">
-  Thank you for your interest in SageMath! You can get the complete source for SageMath to compile it on
-  your own Linux or macOS system. SageMath lives in an isolated directory and does not interfere with
-  your surrounding system. It ships together with everything necessary to develop SageMath, the source
-  code and all its standard dependencies.
- </div>
-
  <div class="txt narrow">
 
   Please read the <a href="https://github.com/sagemath/sage/blob/master/README.md">README</a> and the 
@@ -328,20 +320,98 @@ Please select a download server close to your location below.
 
 
 <h2 class="narrow">
-Source
+Other SageMath downloads
 </h2>
-<div class="narrow txt border">
-<a href="./download-source.html">Download complete source code.</a>
 
+<div class="narrow txt">
+  <a href="https://7896a56df78170d5bab0f306d1a7230986a4206a--sagemath-tobias.netlify.app/installation/index.html">Installation guide: What/how to download</a>
 </div>
 
+<table class="narrow justify top" id="download">
+  <colgroup>
+    <col width="25%">
+    <col width="75%">
+  </colgroup>
 
+  <tbody>
+    <tr>
+      <th>
+        Source (stable)
+      </th>
+      <td>
+        <div class="txt">
+          <a href="./download-source.html">Download complete source</a>
+        </div>
+      </td>
+    </tr>
 
+    <tr>
+      <th>
+        Source (devel)
+      </th>
+      <td>
+        <div class="txt">
+          The <a href="./download-latest.html">latest development release</a>.
+        </div>
 
+        <div>
+          To get the source of the latest development release, choose a
+          download mirror and follow relevant instructions on the mirror page.
+        </div>
+      </td>
+    </tr>
 
-<h2 class="narrow">
+    <tr>
+      <th>
+        Apple macOS
+      </th>
+      <td>
+        <div class="txt">
+          <a href="https://github.com/3-manifolds/Sage_macOS/releases">Download macOS binaries</a> (3-manifolds)
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <th>
+        Microsoft Windows
+      </th>
+      <td>
+        <div class="txt">
+          <a href="https://github.com/sagemath/sage-windows/releases">Download Windows binaries</a> (sage-windows)
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <th>
+        Docker image
+      </th>
+      <td>
+        <div class="txt">
+          <a href= "https://hub.docker.com/u/sagemath/">SageMath Docker images</a>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <th>
+        Source (old)
+      </th>
+      <td>
+        <div class="txt">
+          <a href="http://old.files.sagemath.org/src-old/"><strong>Older Versions</strong> of SageMath
+        </div>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h3 class="narrow">
 Utilities
-</h2>
+</h3>
 <div class="narrow txt border">
 <div class="txt">
       Useful utilities when working with SageMath
@@ -349,10 +419,10 @@ Utilities
 
      <div>
       <ul>
-       <li><a href="https://github.com/sagemath/sage-shell-mode">SageMath Emacs Mode</a> — helps to work with
+       <li><a href="https://github.com/sagemath/sage-shell-mode">Emacs sage-shell-mode</a> — helps to work with
        SageMath in Emacs.</li>
 
-       <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/">SageTex LaTeX
+       <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/">SageTeX LaTeX
        style</a> — this LaTeX style file allows to embed and process SageMath code inside TeX files.
        <a href="./tour-research.html#latex">read more</a></li>
       </ul>
