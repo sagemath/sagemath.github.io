@@ -19,9 +19,10 @@ Please keep the list in alphabetical order by last name!
 <contributors>
 <contributor
  name="Tim Abbott"
- work="MIT"
+ work="Zulip"
+ url="http://web.mit.edu/tabbott/www/"
  description="Full debianization of Sage"
- location="Massachusetts, USA"
+ location="San Francisco, CA, USA"
  trac="tabbott"/>
 <contributor
  name="Michael Abshoff"
@@ -34,9 +35,10 @@ Please keep the list in alphabetical order by last name!
  name="Antti Ajanki" />
 <contributor
  name="Martin Albrecht"
- work="graduate student, Information Security Group, Royal Holloway, University of London"
+ work="Chair of Information Security, Information Security Group, Royal Holloway, University of London"
  location="London, UK"
- description="release manager; sage.crypto.mq; commutative algebra (Singular interface, libSingular, PolyBoRi); efficient low-level arithmetic; dense linear algebra, especially over GF(2)"
+ description="Euclidean lattices (FPLLL, FPyLLL, discrete Gaussians), sage.crypto.mq; commutative algebra (Singular interface, libSingular, PolyBoRi); low-level arithmetic; dense linear algebra over finite fields"
+ url="https://malb.io"
  trac="malb"/>
 <contributor
  name="Nick Alexander"
@@ -81,6 +83,13 @@ Please keep the list in alphabetical order by last name!
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="number field ideal utilities"
  trac="mtaranes"/>
+ <contributor
+ name="David Ayotte"
+ work="Concordia University"
+ location="Montreal, Canada"
+ description="Quasimodular forms; ring of modular forms; bug fixes; tickets reviews"
+ trac="gh-DavidAyotte"
+ url="https://davidayotte.github.io"/>
 <contributor
  name="Oscar Gerardo Lazo Arjona"
  work="Student, Universidad Autónoma de Yucatán"
@@ -94,8 +103,8 @@ Please keep the list in alphabetical order by last name!
  trac="eviatarbach" />
 <contributor
  name="Jennifer Balakrishnan"
- work="PhD student, MIT"
- location="Cambridge, USA"
+ work="Professor, Boston University"
+ location="BU, Boston, USA"
  description="LaTeX mode for MAGMA; work on computation of p-adic heights" />
 <contributor
   name="Serge Ballif"
@@ -113,6 +122,8 @@ Please keep the list in alphabetical order by last name!
  trac="jbandlow"/>
 <contributor
  name="Gregory Bard"
+ work="Professor, University of Wisconsin-Stout"
+ location="Stout, WI, USA"
  description="dense linear algebra over GF(2)"
  url="http://www.gregorybard.com/home.html"/>
 <contributor
@@ -156,8 +167,8 @@ Please keep the list in alphabetical order by last name!
  trac="fbissey"/>
 <contributor
  name="Jonathan Bober"
- work="graduate student, University of Michigan"
- location="MI 48109, USA"
+ work="University of Bristol"
+ location="Bristol, UK"
  description="highly optimized partition function" />
 <contributor
  name="Tom Boothby"
@@ -315,10 +326,10 @@ Please keep the list in alphabetical order by last name!
  description="elliptic curves" />
 <contributor
  name="David Coudert"
- work="Researcher, INRIA"
+ work="Senior Researcher, INRIA"
  location="Sophia Antipolis, France"
  description="Graph Theory; Linear programming"
- url="http://www-sop.inria.fr/members/David.Coudert"
+ url="https://www-sop.inria.fr/members/David.Coudert"
  trac="dcoudert" />
 <contributor
  name="John Cremona"
@@ -384,6 +395,12 @@ Please keep the list in alphabetical order by last name!
  location="University of Washington, WA, USA"
  description="graph theory"
  trac="rdingman"/>
+<contributor
+ name="Linden Disney-Hogg"
+ work="University of Edinburgh"
+ location="Edinburgh, United Kingdom"
+ description="Algebraic geometry"
+ trac="gh-DisneyHogg"/>
 <contributor
  name="Dan Drake"
  work="Korea Advanced Institute of Science and Technology (KAIST)"
@@ -530,7 +547,8 @@ Please keep the list in alphabetical order by last name!
  name="Jan Groenewald"
  work="IT Manager; African Institute for Mathematical Sciences"
  location="AIMS; Muizenberg; Cape Town; South Africa"
- description="Advocacy; Bug fixes; Build; Documentation; Feedback; Ubuntu support"/>
+ trac="pipedream"
+ description="Advocacy; Bug fixes; Build; Documentation; Feedback; Debian and Ubuntu support"/>
 <contributor
  name="Rob Gross" />
 <contributor
@@ -861,6 +879,13 @@ Please keep the list in alphabetical order by last name!
  description="documentation"
  trac="rossk"/>
 <contributor
+ name="Jean-Philippe Labbé"
+ work="Maître d'enseignement, École de Technologie Supérieure"
+ location="Université du Québec, Montréal, Québec, Canada"
+ description="algebraic combinatorics; discrete geometry; Coxeter groups;"
+ url="https://jplab.github.io/"
+ trac="jipilab" />
+<contributor
  name="Sébastien Labbé"
  work="CNRS researcher, LaBRI, Université de Bordeaux"
  location="LaBRI, Université de Bordeaux, Bordeaux, France"
@@ -914,6 +939,13 @@ Please keep the list in alphabetical order by last name!
  description="additions and improvements to modular forms code; bug fixes"
  url="http://www.warwick.ac.uk/~masiao/"
  trac="davidloeffler"/>
+<contributor
+  name="David Lowry-Duda"
+  work="ICERM"
+  location="ICERM, 121 South Main Street, Providence, RI 02903, USA"
+  description="analytic number theory; complex function visualization"
+  url="https://davidlowryduda.com"
+  trac="DavidLowry"/>
 <contributor
  name="Miguel Marco"
  location="Zaragoza, Spain"
@@ -980,6 +1012,13 @@ Please keep the list in alphabetical order by last name!
  description="GAP interface bug fix"
  url="http://www.unilim.fr/pages_perso/matthias.meulien/index.en.html"
  trac="mmeulien"/>
+<contributor
+ name="Marc Mezzarobba"
+ work="researcher, CNRS"
+ location="LIX, 1 rue Honoré d'Estienne d'Orves, 91120 Palaiseau, France"
+ description="basic arithmetic, algebra, rigorous numerics"
+ url="http://marc.mezzarobba.net/"
+ trac="mmezzarobba"/>
 <contributor
  name="Robert Miller"
  url="http://www.rlmiller.org/"
@@ -1255,9 +1294,10 @@ Please keep the list in alphabetical order by last name!
  description="automated testing of SAGE_ROOT/examples; bug fixes, etc" />
 <contributor
  name="David Roe"
- work="graduate student, Harvard University"
- location="Cambridge, MA, USA"
- description="Macaulay 2 interface; optimized p-adics; and so so much more"
+ work="MIT"
+ location="MIT, Cambridge, MA, USA"
+ description="p-adics, finite fields, number theory"
+ url="https://math.mit.edu/~roed"
  trac="roed"/>
 <contributor
  name="Bjarke Hammersholt Roune"
@@ -1403,9 +1443,9 @@ Please keep the list in alphabetical order by last name!
  description="combinatorics"/>
 <contributor
  name="William Stein"
- work="Professor, University of Washington"
- location="1212 E Barclay Ct, Seattle, WA 98122, USA"
- description="project leader; community manager; software architect; started Sage project"
+ work="CEO, SageMath, Inc."
+ location="17725 SE 123rd Place, Renton WA 98059, USA"
+ description="community manager; software architect; started Sage project"
  url="https://wstein.org/"
  pix="https://wstein.org/william.jpg" jitter="0"
  trac="was"/>

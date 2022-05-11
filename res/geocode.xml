@@ -1,21 +1,24 @@
 <locations>
 <!--ATTENTION: DON'T EDIT THESE LOCATIONS. AUTOMATICALLY CREATED BY scripts/geocode.py-->
-<loc location="Massachusetts, USA" loclat="42.4072107" loclng="-71.3824374"/>
+<loc location="San Francisco, CA, USA" loclng="-122.4194155" loclat="37.7749295"/>
 <loc location="Dortmund, Germany" loclat="51.5135872" loclng="7.4652981"/>
 <loc location="Irvine, CA 92697, USA" loclat="33.6471239" loclng="-117.8421325"/>
 <loc location="3201 Burton Street, Southeast Grand Rapids, MI 49546, USA" loclat="42.9332749" loclng="-85.5842852"/>
 <loc location="Lehi, Utah, USA" loclat="40.3916172" loclng="-111.8507662"/>
 <loc location="Madrid, Spain" loclat="40.4167754" loclng="-3.7037902"/>
 <loc location="Magdeburg, Germany" loclat="52.1205333" loclng="11.6276237"/>
+<loc location="Montreal, Canada" loclng="-73.567256" loclat="45.5016889"/>
 <loc location="21.0488082, -89.6416569" loclat="21.0470726" loclng="-89.6425521"/>
 <loc location="Vancouver, Canada" loclat="49.2827291" loclng="-123.1207375"/>
+<loc location="BU, Boston, USA" loclng="-71.1053991" loclat="42.3504997"/>
 <loc location="Nevada State College, NV, USA" loclat="36.0300884" loclng="-114.9789399"/>
+<loc location="Stout, WI, USA" loclng="-91.9267041" loclat="44.8716186"/>
 <loc location="1500 N Warner, Tacoma, WA, 98416 USA" loclat="47.2636459" loclng="-122.4802292"/>
 <loc location="Bordeaux, France" loclat="44.837789" loclng="-0.57918"/>
 <loc location="Montreal, QC, Canada" loclat="45.5016889" loclng="-73.567256"/>
 <loc location="823 St Charles Ave, New Orleans, LA 70118, United States" loclat="29.9454621" loclng="-90.0718307"/>
 <loc location="University of Canterbury, New Zealand" loclat="-43.5235375" loclng="172.5839233"/>
-<loc location="MI 48109, USA" loclat="42.3053253" loclng="-83.6694169"/>
+<loc location="Bristol, UK" loclng="-2.58791" loclat="51.454513"/>
 <loc location="Oberwolfach-Walke, Germany" loclat="48.344225" loclng="8.231172"/>
 <loc location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada" loclat="49.2780463" loclng="-122.9151181"/>
 <loc location="Maybachstr. 14, 68169 Mannheim, Germany" loclat="49.5043186" loclng="8.4717852"/>
@@ -34,6 +37,7 @@
 <loc location="One Shields Avenue, Davis, CA 95616, USA" loclat="38.5391079" loclng="-121.7542621"/>
 <loc location="Rapenburg 70 2311 EZ Leiden, Netherlands" loclat="52.1566622" loclng="4.4867594"/>
 <loc location="Cary, NC, USA" loclat="35.79154" loclng="-78.7811169"/>
+<loc location="Edinburgh, United Kingdom" loclng="-3.188267" loclat="55.953252"/>
 <loc location="Daejeon, South Korea" loclat="36.3504119" loclng="127.3845475"/>
 <loc location="Kaiserslautern, Germany" loclat="49.4400657" loclng="7.7491265"/>
 <loc location="Manila, Philippines" loclat="14.5995124" loclng="120.9842195"/>
@@ -91,12 +95,14 @@
 <loc location="Ohio, USA" loclat="40.4172871" loclng="-82.907123"/>
 <loc location="Klagenfurt, Austria" loclat="46.6364598" loclng="14.3122246"/>
 <loc location="Parkville, Melbourne, Australia" loclat="-37.7945414" loclng="144.9567011"/>
+<loc location="Université du Québec, Montréal, Québec, Canada" loclng="-73.567256" loclat="45.5016889"/>
 <loc location="LaBRI, Université de Bordeaux, Bordeaux, France" loclat="44.808375" loclng="-0.596705"/>
 <loc location="Rocquencourt, Paris, France" loclat="48.8002322" loclng="2.1389298"/>
 <loc location="Hradec Kralove, Czech Republic" loclat="50.2103605" loclng="15.825211"/>
 <loc location="Gwangju, Korea" loclat="35.1595454" loclng="126.8526012"/>
 <loc location="Institut de mathématiques d'Orsay, 91400 Orsay, France" loclat="48.7004361" loclng="2.1780111"/>
 <loc location="80000 Amiens, France" loclat="49.89905" loclng="2.2752772"/>
+<loc location="ICERM, 121 South Main Street, Providence, RI 02903, USA" loclng="-71.40702259999999" loclat="41.82396180000001"/>
 <loc location="Zaragoza, Spain" loclat="41.6488226" loclng="-0.8890853"/>
 <loc location="61300 Brno, Czech Republic" loclat="49.2125064" loclng="16.6211821"/>
 <loc location="Harrisonburg, VA, USA" loclat="38.4495688" loclng="-78.8689155"/>
@@ -106,6 +112,7 @@
 <loc location="University Dr, Irvine, CA 92697, United States" loclat="33.6491978" loclng="-117.8406148"/>
 <loc location="Kansas, USA" loclat="39.011902" loclng="-98.4842465"/>
 <loc location="123, avenue Albert Thomas, 87060 Limoges Cedex, France" loclat="45.8355066" loclng="1.2426994"/>
+<loc location="LIX, 1 rue Honoré d'Estienne d'Orves, 91120 Palaiseau, France" loclng="2.2058645" loclat="48.7151071"/>
 <loc location="College Park, MD, USA" loclat="38.9896967" loclng="-76.93776"/>
 <loc location="Berlin, Germany" loclat="52.5200066" loclng="13.404954"/>
 <loc location="Bethlehem, PA, USA" loclat="40.6259316" loclng="-75.3704579"/>
@@ -139,7 +146,7 @@
 <loc location="Graz, Austria" loclat="47.070714" loclng="15.439504"/>
 <loc location="Tangerang, Indonesia" loclat="-6.178306" loclng="106.631889"/>
 <loc location="Waterloo, Ontario, Canada" loclat="43.4642578" loclng="-80.5204096"/>
-<loc location="Cambridge, MA, USA" loclat="42.3736158" loclng="-71.1097335"/>
+<loc location="MIT, Cambridge, MA, USA" loclng="-71.0928603" loclat="42.35704390000001"/>
 <loc location="Aarhus, Denmark" loclat="56.162939" loclng="10.203921"/>
 <loc location="Minsk, Belarus" loclat="53.9045398" loclng="27.5615244"/>
 <loc location="Montreal, Quebec, Canada" loclat="45.5016889" loclng="-73.567256"/>
@@ -160,7 +167,7 @@
 <loc location="Stuttgart, Germany" loclat="48.7758459" loclng="9.1829321"/>
 <loc location="Barcelona, Spain" loclat="41.3850639" loclng="2.1734035"/>
 <loc location="Prague, Czech Republic" loclat="50.0755381" loclng="14.4378005"/>
-<loc location="1212 E Barclay Ct, Seattle, WA 98122, USA" loclat="47.6069595" loclng="-122.3160401"/>
+<loc location="17725 SE 123rd Place, Renton WA 98059, USA" loclng="-122.103335" loclat="47.4913883"/>
 <loc location="6823 St. Charles Avenue, New Orleans, LA 70118, United States" loclat="29.9354056" loclng="-90.1227564"/>
 <loc location="VU University, Amsterdam" loclat="52.3337568" loclng="4.8657199"/>
 <loc location="London, UK" loclat="51.5073509" loclng="-0.1277583"/>
