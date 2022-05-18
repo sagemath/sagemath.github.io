@@ -1,5 +1,5 @@
-# Sage Mirror List - Wed May 18 16:10:27 2022
+# Sage Mirror List - Wed May 18 17:11:01 2022
 # python usage:
 # import urllib
 # eval(urllib.urlopen('http://www.sagemath.org/mirror_list').read())
-["http://files.sagemath.org/","https://mirror.lyrahosting.com/sagemath/","https://www-ftp.lip6.fr/pub/math/sagemath/","https://www.mirrorservice.org/sites/www.sagemath.org/"]
+["http://files.sagemath.org/","https://mirror-hk.koddos.net/sagemath/","https://mirror.csclub.uwaterloo.ca/sage/","https://mirror.dogado.de/sage/","https://mirror.koddos.net/sagemath/","https://mirror.lyrahosting.com/sagemath/","https://www-ftp.lip6.fr/pub/math/sagemath/","https://www.mirrorservice.org/sites/www.sagemath.org/"]
