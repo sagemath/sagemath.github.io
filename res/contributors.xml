@@ -519,6 +519,14 @@ Please keep the list in alphabetical order by last name!
  work="Professor Emeritus, Department of Electrical Engineering and Computer Sciences, University of California at Berkeley"
  location="Berkeley, California 94720-1776, USA"/>
 <contributor
+ name="Isuru Fernando"
+ work="University of Illinois at Urbana-Champaign"
+ url="https://github.com/isuruf"
+ location="Urbana, IL, USA"
+ trac="isuruf"
+ github="isuruf"
+ gitlab="isuruf"/>
+<contributor
  name="Moritz Firsching"
  trac="moritz"
  github="mo271"/>
@@ -1315,6 +1323,11 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.washington.edu/~palmieri/"
  trac="jhpalmieri"
  github="jhpalmieri"/>
+<contributor
+ name="Lorenz Panny"
+ url="https://yx7.cc"
+ trac="lorenz"
+ github="yyyyx4"/>
 <contributor
  name="Dmitrii Pasechnik"
  work="Department of Computer Science, Oxford University"
