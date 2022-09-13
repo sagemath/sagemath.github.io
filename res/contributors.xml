@@ -372,6 +372,14 @@ Please keep the list in alphabetical order by last name!
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="elliptic curves" />
 <contributor
+ name="Edgar Costa"
+ work="MIT"
+ location="MIT, Cambridge, MA, USA"
+ description="finite fields, number theory"
+ url="https://edgarcosta.org/"
+ trac="edgarcosta"
+ github="edgarcosta"/>
+<contributor
  name="David Coudert"
  work="Senior Researcher, INRIA"
  location="Sophia Antipolis, France"
@@ -452,7 +460,8 @@ Please keep the list in alphabetical order by last name!
  work="University of Edinburgh"
  location="Edinburgh, United Kingdom"
  description="Algebraic geometry"
- trac="gh-DisneyHogg"/>
+ trac="gh-DisneyHogg"
+ github="DisneyHogg"/>
 <contributor
  name="Dan Drake"
  work="Korea Advanced Institute of Science and Technology (KAIST)"
@@ -480,6 +489,7 @@ Please keep the list in alphabetical order by last name!
  name="Nathan Dunfield"
  description="small patches; improvements to algdep; documentation"
  location="Urbana-Champaign, Illinois, USA"
+ github="NathanDunfield"
  trac="dunfield"/>
 <contributor
  name="Gabriel Ebner"
@@ -609,6 +619,10 @@ Please keep the list in alphabetical order by last name!
  trac="goreckc"/>
 <contributor
  name="Eric Gourgoulhon"
+ work="CNRS research scientist, Laboratoire Univers et Théories"
+ location="Observatoire de Paris, Meudon, France"
+ url="https://luth.obspm.fr/~luthier/gourgoulhon/en/"
+ description="differentiable manifolds, graphics, ask.sagemath"
  trac="egourgoulhon"
  github="egourgoulhon"/>
 <contributor
@@ -744,10 +758,11 @@ Please keep the list in alphabetical order by last name!
  name="Clemens Heuberger"
  work="Alpen-Adria-Universität Klagenfurt"
  location="Klagenfurt, Austria"
- description="Finite State Machines"
+ description="Finite State Machines; Asymptotic Ring"
  trac="cheuberg"
  url="http://wwwu.aau.at/cheuberg/"
- github="cheuberg"/>
+ github="cheuberg"
+ gitlab="cheuberg"/>
 <contributor
  name="Jason B Hill"
  work="University of Colorado Boulder"
@@ -1026,7 +1041,7 @@ Please keep the list in alphabetical order by last name!
  name="Kwankyu Lee"
  work="Chosun University"
  location="Gwangju, Korea"
- description="bug fixes"
+ description="coding theory; algebraic curves; documentation; bug fixes"
  trac="klee"
  github="kwankyu"/>
 <contributor
@@ -1068,7 +1083,8 @@ Please keep the list in alphabetical order by last name!
   location="ICERM, 121 South Main Street, Providence, RI 02903, USA"
   description="analytic number theory; complex function visualization"
   url="https://davidlowryduda.com"
-  trac="DavidLowry"/>
+  trac="DavidLowry"
+  github="davidlowryduda"/>
 <contributor
   name="Jori Mäntysalo"
   trac="jmantysalo"
@@ -1204,6 +1220,12 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.bme.hu/~morap"
  trac="mora"/>
 <contributor
+ name="Guillermo Moreno-Socías"
+ work="Univ. Versailles"
+ location="Versailles, France"
+ description="newbie"
+ github="GMS103"/>
+<contributor
  name="Bobby Moretti"
  work="undergraduate student employee, University of Washington"
  location="University of Washington, WA, USA"
@@ -1217,6 +1239,11 @@ Please keep the list in alphabetical order by last name!
  location="Paris, France"
  description="Singular interface improvements"
  trac="gmoroz"/>
+<contributor
+ name="Dave Morris"
+ github="DaveWitteMorris"
+ work="University of Lethbridge, Canada"
+/>
 <contributor
  name="Gregg Musiker"
  work="graduate student, UCSD"
@@ -1655,6 +1682,14 @@ Please keep the list in alphabetical order by last name!
  pix="https://wstein.org/william.jpg" jitter="0"
  trac="was"
  github="williamstein"/>
+<contributor
+ name="Salvatore Stella"
+ work="RTD-b -- Università dell'Aquila -- DISIM"
+ location="Università degli Studi dell'Aquila, edificio Coppito 1, Via Vetoio, 67100 Coppito AQ"
+ url="http://people.disim.univaq.it/~salvatore.stella/"
+ trac="etn40ff"
+ github="etn40ff"
+ gitlab="etn40ff"/>
 <contributor
  name="Ralf Stephan"
  trac="rws"
