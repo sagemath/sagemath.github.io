@@ -4572,12 +4572,11 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.sciences.univ-nantes.fr/~sorger/"
  trac="chsorger"/>
 <contributor
- name="Juan Viu Sos"
- work="PhD Student, Université de Pau et des Pays de l'Adour"
- location="64000 Pau, France"
- description="polynomial rings; polyhedron; algebraic geometry"
- url="http://jviusos.perso.univ-pau.fr/"
- trac="jviusos"/>
+ name="Juan Viu-Sos"
+ location="Universidad Politecnica de Madrid"
+ url="https://jviusos.github.io/"
+ trac="jviusos"
+ github="jviusos"/>
 <contributor
  name="Simon Spicer"
  location="University of Washington, Seattle"
@@ -5374,19 +5373,19 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.lsu.edu/~svanzwam/"
  trac="Stefan"/>
 <contributor
- name="arattan"/>
+ trac="arattan"/>
 <contributor
- name="baechler"/>
+ trac="baechler"/>
 <contributor
- name="beankao"/>
+ trac="beankao"/>
 <contributor
  name="sarah-marie belcastro"/>
 <contributor
- name="johan"/>
+ trac="johan"/>
 <contributor
- name="joskarsson"/>
+ trac="joskarsson"/>
 <contributor
- name="rohana"/>
+ trac="rohana"/>
 <contributor
  name="王瑞期"
  trac="shahuwang"/>
