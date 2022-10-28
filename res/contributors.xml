@@ -1028,10 +1028,13 @@ Please keep the list in alphabetical order by last name!
  location="San Diego, CA, USA"
  description="created the Sage Microsoft Windows installer"/>
 <contributor
- name="Konrad K. Dąbrowski"
- location="Durham University"
- url="http://community.dur.ac.uk/konrad.dabrowski/"
- trac="Konrad127123"/>
+ name="Konrad K. Dabrowski"
+ work="Newcastle University"
+ location="Newcastle upon Tyne, UK"
+ url="https://www.konraddabrowski.co.uk/"
+ trac="Konrad127123"
+ github="Konrad127123"
+ gitlab="Konrad127123"/>
 <contributor
  name="Avinash Dalal"/>
 <contributor
@@ -1066,6 +1069,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Alyson Deines"
  altnames="Aly Deines"
+ work="researcher, CCR La Jolla"
+ location="San Diego, CA"
  trac="aly.deines"
  github="adeines"/>
 <contributor
@@ -4267,8 +4272,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Jorge Catumba Ruiz"
  location="National University of Colombia, Colombia"
- url="http://twitter.com/jorgerev90"
- trac="jcatumba"/>
+ url="http://twitter.com/jorgektu"
+ trac="jcatumba"
+ github="jcatumba"/>
 <contributor
  name="Lauri Ruotsalainen"/>
 <contributor
