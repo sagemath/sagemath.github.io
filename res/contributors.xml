@@ -372,6 +372,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Odile Bénassy"
  location="Université Paris Sud"
+ github="zerline"
  trac="zerline"/>
 <contributor
  name="Heidi Benham"/>
@@ -1676,7 +1677,8 @@ Please keep the list in alphabetical order by last name!
  location="Champs-sur-Marne, France"
  description="combinatorics"
  url="https://igm.univ-mlv.fr/~giraudo/"
- trac="giraudo"/>
+ trac="giraudo"
+ github="SamueleGiraudo"/>
 <contributor
  name="Amy Glen"
  location="Perth, Western Australia"
@@ -4129,8 +4131,10 @@ Please keep the list in alphabetical order by last name!
  github="rishikesha"/>
 <contributor
  name="Roswitha Rissner"
- location="Graz University of Technology, Austria"
- trac="rrissner"/>
+ location="Alpen-Adria-Universität Klagenfurt"
+ trac="rrissner"
+ github="rosirot"            
+/>
 <contributor
  name="Julian Ritter"
  trac="nailuj"/>
@@ -5220,6 +5224,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Aedi Wang"
  altnames="Zeyi Wang"
+ github="uduse"
  trac="zwang"/>
 <contributor
  name="Qiang Wang"/>
@@ -5373,6 +5378,7 @@ Please keep the list in alphabetical order by last name!
  trac="hnxiao"/>
 <contributor
  name="Peijun Xiao"
+ github="pgxiao"
  trac="pjxiao"/>
 <contributor
  name="Chao Xu"
